@@ -23,4 +23,80 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  /* Raffle-themed background: diagonal ticket stripes + subtle confetti */
+  background-image:
+    repeating-linear-gradient(135deg, rgba(0,0,0,0.03) 0 12px, transparent 12px 24px),
+    radial-gradient(circle at 10% 20%, rgba(255,200,70,0.12) 0 6px, transparent 7px),
+    radial-gradient(circle at 80% 40%, rgba(96,165,250,0.10) 0 6px, transparent 7px),
+    radial-gradient(circle at 30% 80%, rgba(99,102,241,0.10) 0 6px, transparent 7px),
+    linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0.08));
+  background-blend-mode: overlay, normal, normal, normal, overlay;
+  background-size: auto, 120px 120px, 100px 100px, 90px 90px, cover;
+  background-attachment: fixed;
+  padding: 24px;
+}
+
+main {
+  min-height: calc(100vh - 48px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Animated reddish blobs in the background to give a slow raffle vibe */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* primary slow moving blob */
+body::before {
+  background: radial-gradient(40rem 30rem at 10% 20%, rgba(255,90,90,0.12), transparent 30%),
+              radial-gradient(30rem 20rem at 80% 70%, rgba(255,150,120,0.08), transparent 30%);
+  transform: translate3d(0,0,0);
+  animation: floatSlow 18s linear infinite;
+  opacity: 0.95;
+}
+
+/* subtle secondary blob for depth */
+body::after {
+  background: radial-gradient(36rem 22rem at 20% 70%, rgba(255,120,120,0.07), transparent 30%),
+              radial-gradient(28rem 18rem at 75% 25%, rgba(240,80,120,0.06), transparent 30%);
+  transform: translate3d(0,0,0);
+  animation: floatSlowReverse 22s linear infinite;
+  opacity: 0.9;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0) translateX(0) scale(1); }
+  25% { transform: translateY(-10px) translateX(6px) scale(1.02); }
+  50% { transform: translateY(6px) translateX(-6px) scale(0.98); }
+  75% { transform: translateY(-4px) translateX(4px) scale(1.01); }
+  100% { transform: translateY(0) translateX(0) scale(1); }
+}
+
+@keyframes floatSlowReverse {
+  0% { transform: translateY(0) translateX(0) scale(1); }
+  25% { transform: translateY(8px) translateX(-8px) scale(1.01); }
+  50% { transform: translateY(-6px) translateX(6px) scale(0.99); }
+  75% { transform: translateY(4px) translateX(-4px) scale(1.02); }
+  100% { transform: translateY(0) translateX(0) scale(1); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  body::before, body::after {
+    animation: none !important;
+  }
+}
+
+/* Ensure page content sits above the animated background */
+main, .container, header, footer, .card {
+  position: relative;
+  z-index: 1;
 }

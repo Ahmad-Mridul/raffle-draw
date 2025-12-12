@@ -1,0 +1,33 @@
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 540px;
+  gap: 24px;
+  /* stretch columns to equal height */
+  align-items: stretch;
+  /* ensure a sensible minimum height so cards match even when empty */
+  min-height: 520px;
+  width: min(1100px, 96%);
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.leftCol {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.rightCol {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+  .rightCol {
+    order: 2;
+  }
+}

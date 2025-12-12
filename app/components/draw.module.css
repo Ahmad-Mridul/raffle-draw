@@ -1,0 +1,91 @@
+.container {
+  max-width: 640px;
+  /* remove auto vertical margin so card fills grid cell height */
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+  /* allow the card to stretch to fill the column */
+  height: 100%;
+  min-height: 0; /* important for flex children inside grid */
+  justify-content: flex-start;
+  flex: 1 1 auto;
+}
+
+.logo {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.displayField {
+  width: 100%;
+  min-height: 140px;
+  border: 3px dashed rgba(34,34,34,0.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(250,250,255,0.95));
+  padding: 14px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.winnerLabel {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #b91c1c; /* red-700 */
+  align-self: flex-start;
+  padding-left: 6px;
+}
+
+.displayFieldWinner {
+  background: linear-gradient(180deg, rgba(185,28,28,0.95), rgba(220,38,38,0.95));
+  color: #fff;
+  border-color: rgba(255,255,255,0.12);
+  box-shadow: 0 8px 30px rgba(185,28,28,0.14);
+  border: 3px solid rgba(185,28,28,0.9);
+}
+
+.button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button {
+  padding: 12px 20px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg,#0b74de,#0b61b8);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(11,116,222,0.18);
+}
+
+.buttonActive {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(11,116,222,0.28);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.hint {
+  font-size: 0.9rem;
+  color: #666;
+}

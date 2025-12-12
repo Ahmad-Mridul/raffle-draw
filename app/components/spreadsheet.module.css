@@ -1,0 +1,142 @@
+.sheetWrap {
+  width: 520px;
+  max-width: 100%;
+  background: rgba(255,255,255,0.96);
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 8px 24px rgba(16,24,40,0.08);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* allow the sheet to fill the column height so both cards align */
+  height: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+.sheetHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 700;
+  color: #111827;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+.addColBtn {
+  padding: 6px 10px;
+  font-weight: 600;
+  background: linear-gradient(90deg,#f97373,#fb7185);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.tableWrap {
+  overflow: auto;
+  /* allow the table area to expand and be scrollable inside the card */
+  flex: 1 1 auto;
+  min-height: 0; /* allow flex child to shrink properly */
+}
+
+/* When many rows exist, limit height and show scroll */
+.tableWrapScrollable {
+  max-height: 420px; /* approx height for ~15 rows */
+  overflow: auto;
+}
+
+.sheetTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sheetTable th,
+.sheetTable td {
+  border: 1px solid rgba(59,65,81,0.08); /* softer slate border */
+  padding: 6px 8px;
+  color: #374151; /* text color for table cells */
+}
+
+/* highlight animation for a chosen winner row */
+.highlightRow {
+  animation: highlightFlash 1400ms ease forwards;
+  background: linear-gradient(90deg, rgba(251,113,133,0.08), rgba(255,245,235,0.02));
+}
+
+@keyframes highlightFlash {
+  0% { box-shadow: 0 0 0 rgba(251,113,133,0.0); }
+  20% { box-shadow: 0 6px 24px rgba(251,113,133,0.18); }
+  80% { box-shadow: 0 6px 24px rgba(251,113,133,0.08); }
+  100% { box-shadow: 0 0 0 rgba(251,113,133,0.0); }
+}
+
+/* subtle up/down motion while rolling */
+.rollingRow {
+  animation: rollY 120ms linear infinite;
+}
+
+@keyframes rollY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.sheetTable th {
+  background: linear-gradient(180deg, #ffffff, #fbfbfd);
+  font-weight: 800;
+  text-align: left;
+  color: #111827; /* header text color */
+}
+
+.colIndex {
+  width: 48px;
+  text-align: center;
+  color: #6b7280;
+  font-weight: 700;
+}
+
+.cellInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background: transparent;
+  color: #374151;
+}
+
+.headerInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  font-weight: 800;
+  background: transparent;
+  color: #111827;
+  padding: 0;
+}
+
+.sheetTable th input:focus {
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.08);
+  border-radius: 4px;
+}
+
+.smallHint {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.rightColumnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
