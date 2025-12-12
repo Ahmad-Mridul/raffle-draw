@@ -99,9 +99,9 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
 
       {confettiActive && <Confetti active={confettiActive} duration={1800} />}
 
-      <div className={styles.hint}>
+      {/* <div className={styles.hint}>
         Tip: replace the participants array in <code>Draw.jsx</code> with real names.
-      </div>
+      </div> */}
     </div>
   );
 }

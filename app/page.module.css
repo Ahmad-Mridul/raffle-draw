@@ -1,12 +1,12 @@
 .mainGrid {
   display: grid;
-  grid-template-columns: 1fr 540px;
+  grid-template-columns: 1fr;
   gap: 24px;
   /* stretch columns to equal height */
   align-items: stretch;
   /* ensure a sensible minimum height so cards match even when empty */
   min-height: 520px;
-  width: min(1100px, 96%);
+  width: min(1200px, 98%);
   margin: 0 auto;
   padding-top: 24px;
 }
@@ -27,6 +27,7 @@
   .mainGrid {
     grid-template-columns: 1fr;
   }
+
   .rightCol {
     order: 2;
   }

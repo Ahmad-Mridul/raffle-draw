@@ -1,10 +1,10 @@
 .sheetWrap {
-  width: 520px;
+  width: 100%;
   max-width: 100%;
-  background: rgba(255,255,255,0.96);
+  background: rgba(255, 255, 255, 0.96);
   border-radius: 10px;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 8px 24px rgba(16,24,40,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@
 .addColBtn {
   padding: 6px 10px;
   font-weight: 600;
-  background: linear-gradient(90deg,#f97373,#fb7185);
+  background: linear-gradient(90deg, #f97373, #fb7185);
   color: white;
   border-radius: 8px;
   border: none;
@@ -46,12 +46,14 @@
   overflow: auto;
   /* allow the table area to expand and be scrollable inside the card */
   flex: 1 1 auto;
-  min-height: 0; /* allow flex child to shrink properly */
+  min-height: 0;
+  /* allow flex child to shrink properly */
 }
 
 /* When many rows exist, limit height and show scroll */
 .tableWrapScrollable {
-  max-height: 420px; /* approx height for ~15 rows */
+  max-height: 420px;
+  /* approx height for ~15 rows */
   overflow: auto;
 }
 
@@ -62,22 +64,41 @@
 
 .sheetTable th,
 .sheetTable td {
-  border: 1px solid rgba(59,65,81,0.08); /* softer slate border */
+  border: 1px solid rgba(59, 65, 81, 0.08);
+  /* softer slate border */
   padding: 6px 8px;
-  color: #374151; /* text color for table cells */
+  color: #374151;
+  /* text color for table cells */
+}
+
+/* Ensure all columns have enough space */
+.sheetTable th,
+.sheetTable td {
+  min-width: 150px;
 }
 
 /* highlight animation for a chosen winner row */
 .highlightRow {
   animation: highlightFlash 1400ms ease forwards;
-  background: linear-gradient(90deg, rgba(251,113,133,0.08), rgba(255,245,235,0.02));
+  background: linear-gradient(90deg, rgba(251, 113, 133, 0.08), rgba(255, 245, 235, 0.02));
 }
 
 @keyframes highlightFlash {
-  0% { box-shadow: 0 0 0 rgba(251,113,133,0.0); }
-  20% { box-shadow: 0 6px 24px rgba(251,113,133,0.18); }
-  80% { box-shadow: 0 6px 24px rgba(251,113,133,0.08); }
-  100% { box-shadow: 0 0 0 rgba(251,113,133,0.0); }
+  0% {
+    box-shadow: 0 0 0 rgba(251, 113, 133, 0.0);
+  }
+
+  20% {
+    box-shadow: 0 6px 24px rgba(251, 113, 133, 0.18);
+  }
+
+  80% {
+    box-shadow: 0 6px 24px rgba(251, 113, 133, 0.08);
+  }
+
+  100% {
+    box-shadow: 0 0 0 rgba(251, 113, 133, 0.0);
+  }
 }
 
 /* subtle up/down motion while rolling */
@@ -86,16 +107,29 @@
 }
 
 @keyframes rollY {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .sheetTable th {
   background: linear-gradient(180deg, #ffffff, #fbfbfd);
   font-weight: 800;
   text-align: left;
-  color: #111827; /* header text color */
+  color: #111827;
+  /* header text color */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .colIndex {
@@ -126,7 +160,7 @@
 }
 
 .sheetTable th input:focus {
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.08);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.08);
   border-radius: 4px;
 }
 
