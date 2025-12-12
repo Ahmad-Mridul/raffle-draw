@@ -39,25 +39,22 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
 
     // Helper to wait
     const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-    const tickSpeed = 100; // "Tick tick" speed
+    
+    // 3. Fake Search for 10 seconds
+    const duration = 10000; // 10 seconds
+    const startTime = Date.now();
+    const tickSpeed = 80; // Fast ticking
 
-    // 3. Fake Search: Go Down
-    for (const rowIndex of validIndices) {
-      setSelectedRowIndex(rowIndex);
-      await wait(tickSpeed);
+    while (Date.now() - startTime < duration) {
+       // Pick a random row from valid ones to highlight (fake searching)
+       // We ensure we don't pick the same one twice in a row for better visual flickering
+       let randIndex = Math.floor(Math.random() * validIndices.length);
+       setSelectedRowIndex(validIndices[randIndex]);
+       
+       await wait(tickSpeed);
     }
 
-    // 4. Fake Search: Go Up
-    // We reverse a copy of the array to iterate backwards
-    const reversedIndices = [...validIndices].reverse();
-    for (const rowIndex of reversedIndices) {
-      setSelectedRowIndex(rowIndex);
-      await wait(tickSpeed);
-    }
-
-    // 5. Highlight Winner
-    // Small pause before revealing
-    await wait(200);
+    // 4. Reveal Winner
     setSelectedRowIndex(winnerRowIndex);
     
     // 6. Announce Winner
