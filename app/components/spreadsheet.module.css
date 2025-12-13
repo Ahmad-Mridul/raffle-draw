@@ -52,8 +52,12 @@
 
 /* When many rows exist, limit height and show scroll */
 .tableWrapScrollable {
-  max-height: 420px;
-  /* approx height for ~15 rows */
+  /* Approx height for header + 5 rows. 
+     Header ~ 40px
+     Row ~ 40px
+     5 rows * 40 = 200 + 40 = 240px
+  */
+  max-height: 250px;
   overflow: auto;
 }
 
@@ -71,10 +75,35 @@
   /* text color for table cells */
 }
 
-/* Ensure all columns have enough space */
+/* Ensure all columns have enough space but not too much */
 .sheetTable th,
 .sheetTable td {
+  min-width: 80px;
+  /* Reduced from 150px to prevent cropping */
+}
+
+/* Specific widths for known columns to fit content nicely */
+/* Column 1 is Index (already handled by .colIndex) */
+/* Column 2: ID */
+.sheetTable td:nth-child(2),
+.sheetTable th:nth-child(2) {
+  min-width: 90px;
+  width: 100px;
+}
+
+/* Column 3: Batch */
+.sheetTable td:nth-child(3),
+.sheetTable th:nth-child(3) {
+  min-width: 60px;
+  width: 70px;
+}
+
+/* Column 4: Full Name */
+.sheetTable td:nth-child(4),
+.sheetTable th:nth-child(4) {
   min-width: 150px;
+  width: auto;
+  /* Allow to stretch */
 }
 
 /* highlight animation for a chosen winner row */

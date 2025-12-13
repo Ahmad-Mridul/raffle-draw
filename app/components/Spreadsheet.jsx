@@ -168,9 +168,7 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
           </div>
         </div>
 
-        <div className={styles.smallHint}>Press Enter inside a cell to add a new row. Paste multi-row data to add rows automatically.</div>
-
-        <div className={rows.length >= 15 ? `${styles.tableWrap} ${styles.tableWrapScrollable}` : styles.tableWrap} ref={tableRef}>
+        <div className={rows.length > 5 ? `${styles.tableWrap} ${styles.tableWrapScrollable}` : styles.tableWrap} ref={tableRef}>
           <table className={styles.sheetTable}>
             <thead>
               <tr>

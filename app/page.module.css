@@ -1,34 +1,72 @@
 .mainGrid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-  /* stretch columns to equal height */
-  align-items: stretch;
-  /* ensure a sensible minimum height so cards match even when empty */
-  min-height: 520px;
-  width: min(1200px, 98%);
+  grid-template-columns: 2fr 1fr;
+  /* Left Sidebar | Draw */
+  /* gap: 5px; */
+  /* Reduced from 24px */
+  align-items: start;
+  min-height: 100vh;
+  /* width: 98%; */
+  max-width: 1800px;
   margin: 0 auto;
-  padding-top: 24px;
+  padding: 24px 0;
+  box-sizing: border-box;
 }
 
-.leftCol {
+.leftSidebar {
+  display: flex;
+  flex-direction: column;
+  /* height: calc(100vh - 48px); */
+  /* Full height minus padding */
+  gap: 24px;
+  position: sticky;
+  top: 24px;
+}
+
+.winnersSection {
+  flex-shrink: 0;
+  max-height: 40vh;
+  /* Limit height of winners list */
+  display: flex;
+  flex-direction: column;
+}
+
+.sheetSection {
+  flex-grow: 1;
+  overflow: hidden;
+  /* Prevent overflow, let spreadsheet scroll internally if needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.drawCol {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  /* height: calc(100vh - 48px); */
+  /* Match height for centering if needed */
 }
 
-.rightCol {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .mainGrid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
 
-  .rightCol {
-    order: 2;
+  .leftSidebar {
+    position: static;
+    height: auto;
+  }
+
+  .drawCol {
+    order: -1;
+    /* Show draw on top on mobile/tablet */
+    /* height: auto;
+    margin-bottom: 24px; */
+  }
+
+  .winnersSection {
+    max-height: 400px;
   }
 }

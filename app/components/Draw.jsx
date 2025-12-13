@@ -62,6 +62,7 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
       row: rows[winnerRowIndex],
       rowIndex: winnerRowIndex,
     });
+    if (onWinner) onWinner(winnerRowIndex);
     setConfettiActive(true);
     setAnimating(false);
     setButtonActive(false);

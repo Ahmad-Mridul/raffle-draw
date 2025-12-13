@@ -1,0 +1,75 @@
+.container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 80vh;
+    /* specific height constraint or let it stretch */
+    overflow: hidden;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.listWrap {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 0.9rem;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.id {
+    font-weight: 600;
+    color: #4b5563;
+    margin-right: 12px;
+}
+
+.name {
+    color: #1f2937;
+    text-align: right;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rank {
+    font-weight: 700;
+    color: #dc2626;
+    /* Red color for rank */
+    margin-right: 8px;
+    width: 35px;
+}
+
+.empty {
+    color: #9ca3af;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
