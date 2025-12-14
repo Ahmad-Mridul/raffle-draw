@@ -18,7 +18,7 @@ export default function WinnersList({ winners = [], onReset }) {
       if (onReset) {
         await onReset();
       } else {
-        await fetch('http://localhost:5000/winners/reset', { method: 'POST' });
+        await fetch('https://raffle-draw-backend.vercel.app/winners/reset', { method: 'POST' });
       }
     } catch (err) {
       // eslint-disable-next-line no-console
