@@ -1,0 +1,5407 @@
+// [
+//   {
+//     "ID": "250001",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Apple Mahmud Anwar"
+//   },
+//   {
+//     "ID": "250002",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. AQM Omar Sharif"
+//   },
+//   {
+//     "ID": "250003",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Moyeen Hasan"
+//   },
+//   {
+//     "ID": "250004",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Jebin"
+//   },
+//   {
+//     "ID": "250005",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Md Moshiur Rahman"
+//   },
+//   {
+//     "ID": "250006",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Hamudur Rahman"
+//   },
+//   {
+//     "ID": "250007",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Mohammad Noor-A-Alam(Jahir)"
+//   },
+//   {
+//     "ID": "250008",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Fatima Akhter Ruby"
+//   },
+//   {
+//     "ID": "250009",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Eqramur Rahman"
+//   },
+//   {
+//     "ID": "250010",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. KM Ziaur Rahman"
+//   },
+//   {
+//     "ID": "250011",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. A H M Khairul Bashar"
+//   },
+//   {
+//     "ID": "250012",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Md. Humayun Zaman Choudhury"
+//   },
+//   {
+//     "ID": "250013",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Jalal Mohsin Uddin"
+//   },
+//   {
+//     "ID": "250014",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Selina Akter"
+//   },
+//   {
+//     "ID": "250015",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Md. Ahsanuzzaman Khan"
+//   },
+//   {
+//     "ID": "250016",
+//     "BATCH": "J01",
+//     "FULL NAME": "Prof Col Dr Kamal Hossain"
+//   },
+//   {
+//     "ID": "250017",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Mahmuda Karim"
+//   },
+//   {
+//     "ID": "250018",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Md.Rajibe Mia"
+//   },
+//   {
+//     "ID": "250019",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Razia Rahman Jolly"
+//   },
+//   {
+//     "ID": "250020",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. AJOY KUMAR SARKER"
+//   },
+//   {
+//     "ID": "250021",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Afraoza Talukder"
+//   },
+//   {
+//     "ID": "250022",
+//     "BATCH": "J01",
+//     "FULL NAME": "Dr. Muhammed Waliur Rahman"
+//   },
+//   {
+//     "ID": "250023",
+//     "BATCH": "J01",
+//     "FULL NAME": "Prof. Dr. Ruma Parvin"
+//   },
+//   {
+//     "ID": "250024",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Arifa Akther Shoma"
+//   },
+//   {
+//     "ID": "250025",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Md.Taufiq Atiq"
+//   },
+//   {
+//     "ID": "250026",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Dipankar Kumar"
+//   },
+//   {
+//     "ID": "250027",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Ahmed Zahir Bin Zia"
+//   },
+//   {
+//     "ID": "250028",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Mahfuza Rahman"
+//   },
+//   {
+//     "ID": "250029",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Fahmida Zabeen"
+//   },
+//   {
+//     "ID": "250030",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Farhana Rahman"
+//   },
+//   {
+//     "ID": "250031",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Humaira Zaheda"
+//   },
+//   {
+//     "ID": "250032",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Jafrin Jahan"
+//   },
+//   {
+//     "ID": "250033",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Masroor Rahman"
+//   },
+//   {
+//     "ID": "250034",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Nusrat Mowsumi"
+//   },
+//   {
+//     "ID": "250035",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. Rebeka Sultana"
+//   },
+//   {
+//     "ID": "250036",
+//     "BATCH": "J02",
+//     "FULL NAME": "Dr. KM Saiful Islam"
+//   },
+//   {
+//     "ID": "250037",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Shakil"
+//   },
+//   {
+//     "ID": "250038",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Arifa Nazneen"
+//   },
+//   {
+//     "ID": "250039",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Selina Begum"
+//   },
+//   {
+//     "ID": "250040",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Mohammad Arshaulla"
+//   },
+//   {
+//     "ID": "250041",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Fahmida Rashid Swati"
+//   },
+//   {
+//     "ID": "250042",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Md. Hasanur Rahman"
+//   },
+//   {
+//     "ID": "250043",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Rafiqul Haque Firoz"
+//   },
+//   {
+//     "ID": "250044",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Farhana Jaya Chowdhury"
+//   },
+//   {
+//     "ID": "250045",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Mohammad Abdullah Al Mamun"
+//   },
+//   {
+//     "ID": "250046",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Marufa Yasmin"
+//   },
+//   {
+//     "ID": "250047",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Munim Ahmed"
+//   },
+//   {
+//     "ID": "250048",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Fahmida Afrin"
+//   },
+//   {
+//     "ID": "250049",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Uzzal"
+//   },
+//   {
+//     "ID": "250050",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. M M SHAHIDUR RAHMAN"
+//   },
+//   {
+//     "ID": "250051",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. ASM Shahidullah"
+//   },
+//   {
+//     "ID": "250052",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Shamima Parvin"
+//   },
+//   {
+//     "ID": "250053",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Sharmin Jahan"
+//   },
+//   {
+//     "ID": "250054",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Tanzila Halim"
+//   },
+//   {
+//     "ID": "250055",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr. Rashid Zaman"
+//   },
+//   {
+//     "ID": "250056",
+//     "BATCH": "J03 ",
+//     "FULL NAME": "Dr. Yasmin Joarder"
+//   },
+//   {
+//     "ID": "250057",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Eva"
+//   },
+//   {
+//     "ID": "250058",
+//     "BATCH": "J04",
+//     "FULL NAME": "DR. JESMIN REHANA"
+//   },
+//   {
+//     "ID": "250059",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Abed Hussain Khan"
+//   },
+//   {
+//     "ID": "250060",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Asif Iqbal Joarder"
+//   },
+//   {
+//     "ID": "250061",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Mohammad Belal Uddin"
+//   },
+//   {
+//     "ID": "250062",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Md. Enamul Karim"
+//   },
+//   {
+//     "ID": "250063",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Fazlur Rahman Choudhury"
+//   },
+//   {
+//     "ID": "250064",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Mohammad Imam Shafique"
+//   },
+//   {
+//     "ID": "250065",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Fariba Rashid"
+//   },
+//   {
+//     "ID": "250066",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Ershadul Haque"
+//   },
+//   {
+//     "ID": "250067",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Md Abu Sayeed Al Mamun"
+//   },
+//   {
+//     "ID": "250068",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. J. M. H QAUSAR ALAM"
+//   },
+//   {
+//     "ID": "250069",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Mohammed Shakil Hossan"
+//   },
+//   {
+//     "ID": "250070",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. COL SABIHA MAHBUBA"
+//   },
+//   {
+//     "ID": "250071",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Lima Asrin Sayami"
+//   },
+//   {
+//     "ID": "250072",
+//     "BATCH": "J04",
+//     "FULL NAME": "Dr. Mohammad Shawkat Hossain Khan"
+//   },
+//   {
+//     "ID": "250073",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Md. Atiqur Rahman"
+//   },
+//   {
+//     "ID": "250074",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Afrin Ahmed Clara"
+//   },
+//   {
+//     "ID": "250075",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Mohammed Iqbal Ahmed"
+//   },
+//   {
+//     "ID": "250076",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Mohammed Rashed Alam"
+//   },
+//   {
+//     "ID": "250077",
+//     "BATCH": "J05",
+//     "FULL NAME": "DR. MOHAMMAD OMAR SHARIF IBNE HASAN"
+//   },
+//   {
+//     "ID": "250078",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Mohammed Jashim Uddin"
+//   },
+//   {
+//     "ID": "250079",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Shahana Parvin"
+//   },
+//   {
+//     "ID": "250080",
+//     "BATCH": "J05",
+//     "FULL NAME": "DR. SHEIKH FORHAD"
+//   },
+//   {
+//     "ID": "250081",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Tania Bashar"
+//   },
+//   {
+//     "ID": "250082",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Md. Faroque Ehtesham Parag"
+//   },
+//   {
+//     "ID": "250083",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Gazi Mohammad Imranul Haque"
+//   },
+//   {
+//     "ID": "250084",
+//     "BATCH": "J05",
+//     "FULL NAME": "DR. HUMAIRA JAHANGIR"
+//   },
+//   {
+//     "ID": "250085",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Jannatul Ferdous"
+//   },
+//   {
+//     "ID": "250086",
+//     "BATCH": "J05",
+//     "FULL NAME": "Prof Dr. Khan Shakil Ahmed"
+//   },
+//   {
+//     "ID": "250087",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Ziauddin Mohammad Yahia Lipu"
+//   },
+//   {
+//     "ID": "250088",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Ruhi Tahsina Rashid"
+//   },
+//   {
+//     "ID": "250089",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Mahrubin Alam Misty"
+//   },
+//   {
+//     "ID": "250090",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Mohammed Maruf ul Quader"
+//   },
+//   {
+//     "ID": "250091",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Mohammed Mozzammel Hoque"
+//   },
+//   {
+//     "ID": "250092",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Nasira Akter"
+//   },
+//   {
+//     "ID": "250093",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Noman Iftekhar"
+//   },
+//   {
+//     "ID": "250094",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Nusrat Jahan Khan"
+//   },
+//   {
+//     "ID": "250095",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Shah Aminul Islam (Shohag)"
+//   },
+//   {
+//     "ID": "250096",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Rehana Farroque"
+//   },
+//   {
+//     "ID": "250097",
+//     "BATCH": "J05",
+//     "FULL NAME": "DR. RIFAT ASMA CHOWDHURY"
+//   },
+//   {
+//     "ID": "250098",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Salim Mahmod"
+//   },
+//   {
+//     "ID": "250099",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Sharmin Nahar Bashar"
+//   },
+//   {
+//     "ID": "250100",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Sharmin Nahar"
+//   },
+//   {
+//     "ID": "250101",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Md Shahidul Islam Polash"
+//   },
+//   {
+//     "ID": "250102",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. M A Mustafa Hossain"
+//   },
+//   {
+//     "ID": "250103",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Kaniz Akhter Luna"
+//   },
+//   {
+//     "ID": "250104",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr. Tahmina Ferdousy Sumi"
+//   },
+//   {
+//     "ID": "250105",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Amitava Biswas"
+//   },
+//   {
+//     "ID": "250106",
+//     "BATCH": "J06",
+//     "FULL NAME": "DR. AMITAV SAHA"
+//   },
+//   {
+//     "ID": "250107",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Bulbul Ahmed"
+//   },
+//   {
+//     "ID": "250108",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Kantarin Sultana"
+//   },
+//   {
+//     "ID": "250109",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Abdullah al Mahfuz"
+//   },
+//   {
+//     "ID": "250110",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Kazi Tamanna moonmoon"
+//   },
+//   {
+//     "ID": "250111",
+//     "BATCH": "J06",
+//     "FULL NAME": "DR. MUHAMMAD JAHANGIR HOWLADER LITON"
+//   },
+//   {
+//     "ID": "250112",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Zinnat Ara Yesmin"
+//   },
+//   {
+//     "ID": "250113",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Fahmida Siddique"
+//   },
+//   {
+//     "ID": "250114",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Omar Faroque"
+//   },
+//   {
+//     "ID": "250115",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Ireen Hossain Shuvra"
+//   },
+//   {
+//     "ID": "250116",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Osman Goni Chowdhury"
+//   },
+//   {
+//     "ID": "250117",
+//     "BATCH": "J06",
+//     "FULL NAME": "DR. SOHANA SIDDIQUE"
+//   },
+//   {
+//     "ID": "250118",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Rehana Sultana"
+//   },
+//   {
+//     "ID": "250119",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Tasmina Chowdhury"
+//   },
+//   {
+//     "ID": "250120",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Mohammad Mahabubur Rahman"
+//   },
+//   {
+//     "ID": "250121",
+//     "BATCH": "J06",
+//     "FULL NAME": "Dr. Ziaur Rahman Chowdhury"
+//   },
+//   {
+//     "ID": "250122",
+//     "BATCH": "J07",
+//     "FULL NAME": "DR. MD. MAMUN OR RASHID NAYAN"
+//   },
+//   {
+//     "ID": "250123",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Taslima Akter"
+//   },
+//   {
+//     "ID": "250124",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Mohammad Anwarul Haque"
+//   },
+//   {
+//     "ID": "250125",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Ishrat Jahan Ruba"
+//   },
+//   {
+//     "ID": "250126",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Pradip Chandra Roy"
+//   },
+//   {
+//     "ID": "250127",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Md. Arifur Rahman Sazal"
+//   },
+//   {
+//     "ID": "250128",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Arif Ul Haque"
+//   },
+//   {
+//     "ID": "250129",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Rehana Sultana"
+//   },
+//   {
+//     "ID": "250130",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Fatema Jahan Bari(Badhon)"
+//   },
+//   {
+//     "ID": "250131",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Rezwana Haque"
+//   },
+//   {
+//     "ID": "250132",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Iffat Ara Akbar (Sangeeta)"
+//   },
+//   {
+//     "ID": "250133",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Muhammad Nasif Imtiaz Shantu"
+//   },
+//   {
+//     "ID": "250134",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Farzana Islam Shumi"
+//   },
+//   {
+//     "ID": "250135",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Kazi Muzahid Karim"
+//   },
+//   {
+//     "ID": "250136",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Nasrin Hasan"
+//   },
+//   {
+//     "ID": "250137",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Mafruha Nazneen Sumi"
+//   },
+//   {
+//     "ID": "250138",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Porimal Kumar Das"
+//   },
+//   {
+//     "ID": "250139",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Farhana Rahman"
+//   },
+//   {
+//     "ID": "250140",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Mohammad Saiduzzaman Jewel"
+//   },
+//   {
+//     "ID": "250141",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Mohammad Saiful Islam"
+//   },
+//   {
+//     "ID": "250142",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Mst.Saifun Naher"
+//   },
+//   {
+//     "ID": "250143",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Samiha Saif"
+//   },
+//   {
+//     "ID": "250144",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Mita Shabnam"
+//   },
+//   {
+//     "ID": "250145",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Suparna Sen"
+//   },
+//   {
+//     "ID": "250146",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Tahmeena Nasreen Shumee"
+//   },
+//   {
+//     "ID": "250147",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Shahin Sultana Tani"
+//   },
+//   {
+//     "ID": "250148",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Mohammad Zahid Haider"
+//   },
+//   {
+//     "ID": "250149",
+//     "BATCH": "J07",
+//     "FULL NAME": "Dr. Syed Fahim Shams"
+//   },
+//   {
+//     "ID": "250150",
+//     "BATCH": "J07 ",
+//     "FULL NAME": "Dr. Md. Rafiqul Hasan Faisal"
+//   },
+//   {
+//     "ID": "250151",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Ahmed Mainul"
+//   },
+//   {
+//     "ID": "250152",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Al Amin Shikdar"
+//   },
+//   {
+//     "ID": "250153",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Amena Begum"
+//   },
+//   {
+//     "ID": "250154",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Hamid Hassan"
+//   },
+//   {
+//     "ID": "250155",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Lubna Yeasmin"
+//   },
+//   {
+//     "ID": "250156",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Russell Ahmed"
+//   },
+//   {
+//     "ID": "250157",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Syed Moinuddin Satter"
+//   },
+//   {
+//     "ID": "250158",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Farjana Akter"
+//   },
+//   {
+//     "ID": "250159",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Jesmin Ara Jolly"
+//   },
+//   {
+//     "ID": "250160",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Juliana Antora Mallick ( Muna)"
+//   },
+//   {
+//     "ID": "250161",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Mahfuza Karim Snigdha"
+//   },
+//   {
+//     "ID": "250162",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Mohammad Mahfuzur Rahman Sagar"
+//   },
+//   {
+//     "ID": "250163",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. ANM Golam Mohaimen"
+//   },
+//   {
+//     "ID": "250164",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Mohammad Jamal Uddin"
+//   },
+//   {
+//     "ID": "250165",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Monirul Islam Chayon"
+//   },
+//   {
+//     "ID": "250166",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Adneen Moureen"
+//   },
+//   {
+//     "ID": "250167",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. S M Niaz Mowla"
+//   },
+//   {
+//     "ID": "250168",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Mostafa Kamal Pasha"
+//   },
+//   {
+//     "ID": "250169",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Rupash paul"
+//   },
+//   {
+//     "ID": "250170",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Rifat Sultana"
+//   },
+//   {
+//     "ID": "250171",
+//     "BATCH": "J08",
+//     "FULL NAME": "Dr. Tarzia Asma Zafrullah"
+//   },
+//   {
+//     "ID": "250172",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Abul Faisal MD Nuruddin Chowdhury"
+//   },
+//   {
+//     "ID": "250173",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Shafique Amin Kajal"
+//   },
+//   {
+//     "ID": "250174",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Mohammad Al-Amin ( Shimul )"
+//   },
+//   {
+//     "ID": "250175",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Md. Alamgir Hossain"
+//   },
+//   {
+//     "ID": "250176",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Mohammad Ali Chowdhury"
+//   },
+//   {
+//     "ID": "250177",
+//     "BATCH": "J09",
+//     "FULL NAME": "DR. MD MAHBUB ALAM BHUIYAN"
+//   },
+//   {
+//     "ID": "250178",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Tanvir Islam Majumder"
+//   },
+//   {
+//     "ID": "250179",
+//     "BATCH": "J09",
+//     "FULL NAME": "DR. MD. EJAZ QUADER"
+//   },
+//   {
+//     "ID": "250180",
+//     "BATCH": "J09",
+//     "FULL NAME": "DR. TANIA AFROSE"
+//   },
+//   {
+//     "ID": "250181",
+//     "BATCH": "J09",
+//     "FULL NAME": "DR. MD.IFTAKHAR ALAM EMON"
+//   },
+//   {
+//     "ID": "250182",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Ferdows Ahmed Chowdhury Lucky"
+//   },
+//   {
+//     "ID": "250183",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Jakia Hossain Pakhi"
+//   },
+//   {
+//     "ID": "250184",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Muhammad Imam Hasan"
+//   },
+//   {
+//     "ID": "250185",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Saleha Alam"
+//   },
+//   {
+//     "ID": "250186",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Md Imrul Hasan Chowdhury"
+//   },
+//   {
+//     "ID": "250187",
+//     "BATCH": "J09",
+//     "FULL NAME": "DR. JESMIN SULTANA"
+//   },
+//   {
+//     "ID": "250188",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Md. Kamrul Hasan"
+//   },
+//   {
+//     "ID": "250189",
+//     "BATCH": "J09",
+//     "FULL NAME": "DR. ABDUL MOTIN NISSAN"
+//   },
+//   {
+//     "ID": "250190",
+//     "BATCH": "J09",
+//     "FULL NAME": "DR. SOUMITRA BASAK"
+//   },
+//   {
+//     "ID": "250191",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Talukdar Nazibul Hasan"
+//   },
+//   {
+//     "ID": "250192",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Rummana Rahim"
+//   },
+//   {
+//     "ID": "250193",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Sabrina Amin"
+//   },
+//   {
+//     "ID": "250194",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. MD. ABUL FAZAL"
+//   },
+//   {
+//     "ID": "250195",
+//     "BATCH": "J09",
+//     "FULL NAME": "DR. TAHMINA AKTER"
+//   },
+//   {
+//     "ID": "250196",
+//     "BATCH": "J09",
+//     "FULL NAME": "Dr. Zannatoon Noore Nayeem"
+//   },
+//   {
+//     "ID": "250197",
+//     "BATCH": "J09 ",
+//     "FULL NAME": "DR. SHAMS IBNE MAKSUD"
+//   },
+//   {
+//     "ID": "250198",
+//     "BATCH": "J10",
+//     "FULL NAME": "DR. ABU TAHER MD SALEH"
+//   },
+//   {
+//     "ID": "250199",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. U S Ayesha Hoque Jolly"
+//   },
+//   {
+//     "ID": "250200",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Afroja Akhter"
+//   },
+//   {
+//     "ID": "250201",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Farzana Amin"
+//   },
+//   {
+//     "ID": "250202",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Arif"
+//   },
+//   {
+//     "ID": "250203",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Shaila Sharmin Shanta"
+//   },
+//   {
+//     "ID": "250204",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Shahriar Sazzad"
+//   },
+//   {
+//     "ID": "250205",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Mir Hossain Mithu"
+//   },
+//   {
+//     "ID": "250206",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Nazmul"
+//   },
+//   {
+//     "ID": "250207",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Shibbir Ahmed Titu"
+//   },
+//   {
+//     "ID": "250208",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Tanveer Ahmed Been Hussain"
+//   },
+//   {
+//     "ID": "250209",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Mohosina Tabassum"
+//   },
+//   {
+//     "ID": "250210",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Sania Sultana"
+//   },
+//   {
+//     "ID": "250211",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Khursheed Jahan Khaleda Shahinoor"
+//   },
+//   {
+//     "ID": "250212",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Ferdows Haider"
+//   },
+//   {
+//     "ID": "250213",
+//     "BATCH": "J10",
+//     "FULL NAME": "DR. GOLAM SAKLAYEN"
+//   },
+//   {
+//     "ID": "250214",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Hasina Akter"
+//   },
+//   {
+//     "ID": "250215",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Hussain Al Amin Chanchal"
+//   },
+//   {
+//     "ID": "250216",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. T. R. Joy"
+//   },
+//   {
+//     "ID": "250217",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Kashana Lima"
+//   },
+//   {
+//     "ID": "250218",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Kazi Iman"
+//   },
+//   {
+//     "ID": "250219",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Yesmina Rahman Lopa"
+//   },
+//   {
+//     "ID": "250220",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Masud Imtiaz"
+//   },
+//   {
+//     "ID": "250221",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Md. Naved Yusuf Sanjay"
+//   },
+//   {
+//     "ID": "250222",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Shahnaz Islam Sutopa"
+//   },
+//   {
+//     "ID": "250223",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Sharika Sayed Shorna"
+//   },
+//   {
+//     "ID": "250224",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Sharmine Zaman Urmee"
+//   },
+//   {
+//     "ID": "250225",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Tahmina Senjuty"
+//   },
+//   {
+//     "ID": "250226",
+//     "BATCH": "J10",
+//     "FULL NAME": "Dr. Tahniya"
+//   },
+//   {
+//     "ID": "250227",
+//     "BATCH": "J10 ",
+//     "FULL NAME": "Dr. Faeqa Hafiz"
+//   },
+//   {
+//     "ID": "250228",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Tangina Afrose"
+//   },
+//   {
+//     "ID": "250229",
+//     "BATCH": "J11",
+//     "FULL NAME": "DR. UMME SUMAIA SHOHANA"
+//   },
+//   {
+//     "ID": "250230",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Abul Hasan"
+//   },
+//   {
+//     "ID": "250231",
+//     "BATCH": "J11",
+//     "FULL NAME": "DR. HASSAN R MAHMOOD"
+//   },
+//   {
+//     "ID": "250232",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Sadya Afroz Lisa"
+//   },
+//   {
+//     "ID": "250233",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. S. M. Tareque Anam"
+//   },
+//   {
+//     "ID": "250234",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Farzana Zaman LIZA"
+//   },
+//   {
+//     "ID": "250235",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Rumana Kamal"
+//   },
+//   {
+//     "ID": "250236",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Azmeri Haque"
+//   },
+//   {
+//     "ID": "250237",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Mosharraf Himel"
+//   },
+//   {
+//     "ID": "250238",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Sharmin Mostafa"
+//   },
+//   {
+//     "ID": "250239",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Priyanka Moitra"
+//   },
+//   {
+//     "ID": "250240",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Shahanaj Parveen"
+//   },
+//   {
+//     "ID": "250241",
+//     "BATCH": "J11",
+//     "FULL NAME": "DR. SUSHMITA ASHRAFI"
+//   },
+//   {
+//     "ID": "250242",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr. Golam Mahbub Sikder"
+//   },
+//   {
+//     "ID": "250243",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Basit Roshid"
+//   },
+//   {
+//     "ID": "250244",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Iffat Rahman"
+//   },
+//   {
+//     "ID": "250245",
+//     "BATCH": "J12",
+//     "FULL NAME": "DR. MD. AHADUZZAMAN"
+//   },
+//   {
+//     "ID": "250246",
+//     "BATCH": "J12",
+//     "FULL NAME": "DR. KHANDOKER MYNUL HASAN"
+//   },
+//   {
+//     "ID": "250247",
+//     "BATCH": "J12",
+//     "FULL NAME": "DR. MOHAMMAD ABU HASNAT"
+//   },
+//   {
+//     "ID": "250248",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Samsunnahar dina"
+//   },
+//   {
+//     "ID": "250249",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Oman Qayum"
+//   },
+//   {
+//     "ID": "250250",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Sadia Binte Momen"
+//   },
+//   {
+//     "ID": "250251",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Nazneen sultana"
+//   },
+//   {
+//     "ID": "250252",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Jyoti Vaskor Saha"
+//   },
+//   {
+//     "ID": "250253",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Mahbubur Rahman Rajib"
+//   },
+//   {
+//     "ID": "250254",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Sazzad Hossain"
+//   },
+//   {
+//     "ID": "250255",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Muhammad Tanvir Hasan"
+//   },
+//   {
+//     "ID": "250256",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr. Ahmed Tareq aziz"
+//   },
+//   {
+//     "ID": "250257",
+//     "BATCH": "J13",
+//     "FULL NAME": "Dr. Alima Taizu"
+//   },
+//   {
+//     "ID": "250258",
+//     "BATCH": "J13",
+//     "FULL NAME": "Dr. Sakib-Al-Nahian"
+//   },
+//   {
+//     "ID": "250259",
+//     "BATCH": "J13",
+//     "FULL NAME": "Dr. S M A Mahmud (Moon)"
+//   },
+//   {
+//     "ID": "250260",
+//     "BATCH": "J13",
+//     "FULL NAME": "Dr. Sheikh Mahamoudh Riad"
+//   },
+//   {
+//     "ID": "250261",
+//     "BATCH": "J13",
+//     "FULL NAME": "Dr. Md.Rezaul Karim Mojumder Rasel"
+//   },
+//   {
+//     "ID": "250262",
+//     "BATCH": "J13",
+//     "FULL NAME": "Dr. Syeda Shara"
+//   },
+//   {
+//     "ID": "250263",
+//     "BATCH": "J14",
+//     "FULL NAME": "Dr. Aneeka Rehnuma"
+//   },
+//   {
+//     "ID": "250264",
+//     "BATCH": "J14",
+//     "FULL NAME": "DR. ILAT-E-MEES SUBAH"
+//   },
+//   {
+//     "ID": "250265",
+//     "BATCH": "J14",
+//     "FULL NAME": "Dr. Nusrat kamal ema"
+//   },
+//   {
+//     "ID": "250266",
+//     "BATCH": "J14",
+//     "FULL NAME": "Dr. Motahhara Afrin"
+//   },
+//   {
+//     "ID": "250267",
+//     "BATCH": "J14",
+//     "FULL NAME": "Dr. Zia Uddin Ahmed"
+//   },
+//   {
+//     "ID": "250268",
+//     "BATCH": "J14",
+//     "FULL NAME": "Dr. Milanoor Mahbuba Tayeb"
+//   },
+//   {
+//     "ID": "250269",
+//     "BATCH": "J14",
+//     "FULL NAME": "DR. JAHIDUL ISLAM"
+//   },
+//   {
+//     "ID": "250270",
+//     "BATCH": "J14",
+//     "FULL NAME": "DR. SINTHIA NAZIB"
+//   },
+//   {
+//     "ID": "250271",
+//     "BATCH": "J14",
+//     "FULL NAME": "Dr. Poly Saha"
+//   },
+//   {
+//     "ID": "250272",
+//     "BATCH": "J14",
+//     "FULL NAME": "Dr. Khondokar Arifuzzaman"
+//   },
+//   {
+//     "ID": "250273",
+//     "BATCH": "J14",
+//     "FULL NAME": "Dr. Ahmed Shahriar"
+//   },
+//   {
+//     "ID": "250274",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Shariar Amin Rasel"
+//   },
+//   {
+//     "ID": "250275",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Debasish Dey"
+//   },
+//   {
+//     "ID": "250276",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Md. Rifat Arefin Shawon"
+//   },
+//   {
+//     "ID": "250277",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Kaniz Fatema Tanin"
+//   },
+//   {
+//     "ID": "250278",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Pulak Dhar"
+//   },
+//   {
+//     "ID": "250279",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Rishita Sharmin"
+//   },
+//   {
+//     "ID": "250280",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Rifat Istiak Sirat"
+//   },
+//   {
+//     "ID": "250281",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Habibur Rahman"
+//   },
+//   {
+//     "ID": "250282",
+//     "BATCH": "J15",
+//     "FULL NAME": "DR. IMRAN MAHAMUD CHOWDHURY"
+//   },
+//   {
+//     "ID": "250283",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Jannatul Ferdous Sonia"
+//   },
+//   {
+//     "ID": "250284",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Mahfuja Akter"
+//   },
+//   {
+//     "ID": "250285",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. AFM  Nafiz Elahi Khan"
+//   },
+//   {
+//     "ID": "250286",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Repon Saha"
+//   },
+//   {
+//     "ID": "250287",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Shalehin Imtiaz Badhon"
+//   },
+//   {
+//     "ID": "250288",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Somaiya Islam"
+//   },
+//   {
+//     "ID": "250289",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Tahrina Akter"
+//   },
+//   {
+//     "ID": "250290",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Md Ziaul Hoq"
+//   },
+//   {
+//     "ID": "250291",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Md. Nazmul Islam Sujal"
+//   },
+//   {
+//     "ID": "250292",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Sumi Shalehin"
+//   },
+//   {
+//     "ID": "250293",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr. Ispika Naj Upoma"
+//   },
+//   {
+//     "ID": "250294",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. A. S. M. Ashequzzaman"
+//   },
+//   {
+//     "ID": "250295",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Asif Sarwar Haque"
+//   },
+//   {
+//     "ID": "250296",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Bushra Nur Al Chowdhury"
+//   },
+//   {
+//     "ID": "250297",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Md.Moniruzzaman"
+//   },
+//   {
+//     "ID": "250298",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Shakila Jannat"
+//   },
+//   {
+//     "ID": "250299",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Imran Hossain"
+//   },
+//   {
+//     "ID": "250300",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Moon Moon Islam Mitu"
+//   },
+//   {
+//     "ID": "250301",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Jannatul Kobra Nabila"
+//   },
+//   {
+//     "ID": "250302",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Khalid Omar Shahin"
+//   },
+//   {
+//     "ID": "250303",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Humayera Yousuf ALI"
+//   },
+//   {
+//     "ID": "250304",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. S.M. Rakibul Hasan"
+//   },
+//   {
+//     "ID": "250305",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Md.Ruhul Amin Ronny"
+//   },
+//   {
+//     "ID": "250306",
+//     "BATCH": "J16",
+//     "FULL NAME": "DR. MD. ABDULLAH AL MOHSIN"
+//   },
+//   {
+//     "ID": "250307",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Dilruba Sharmin"
+//   },
+//   {
+//     "ID": "250308",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Sehely Afsana"
+//   },
+//   {
+//     "ID": "250309",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Tamzid Billah"
+//   },
+//   {
+//     "ID": "250310",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Labiba Jabeen"
+//   },
+//   {
+//     "ID": "250311",
+//     "BATCH": "J16",
+//     "FULL NAME": "DR. MISKAT THAMID AZIZ"
+//   },
+//   {
+//     "ID": "250312",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Mirza Lutful Bari"
+//   },
+//   {
+//     "ID": "250313",
+//     "BATCH": "J16",
+//     "FULL NAME": "DR. K.M ZAFRUL HOSSAIN"
+//   },
+//   {
+//     "ID": "250314",
+//     "BATCH": "J16",
+//     "FULL NAME": "Dr. Zahidul Islam"
+//   },
+//   {
+//     "ID": "250315",
+//     "BATCH": "J16 ",
+//     "FULL NAME": "Dr. Md. Shadat Hossain"
+//   },
+//   {
+//     "ID": "250316",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Zarmeen Nabi"
+//   },
+//   {
+//     "ID": "250317",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Adrita Kaiser"
+//   },
+//   {
+//     "ID": "250318",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Md.Mahbubul Hasan"
+//   },
+//   {
+//     "ID": "250319",
+//     "BATCH": "J17",
+//     "FULL NAME": "MD. ZAFAR-AL-NIMARI"
+//   },
+//   {
+//     "ID": "250320",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Harun Or Rashid"
+//   },
+//   {
+//     "ID": "250321",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. M M FARUK Hossain"
+//   },
+//   {
+//     "ID": "250322",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Nazmul Hossain"
+//   },
+//   {
+//     "ID": "250323",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Sonica Sayam"
+//   },
+//   {
+//     "ID": "250324",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Israt jahan orin"
+//   },
+//   {
+//     "ID": "250325",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Rumana Yeasmin"
+//   },
+//   {
+//     "ID": "250326",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Sadia Islam Swarna"
+//   },
+//   {
+//     "ID": "250327",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Sakib Rahman"
+//   },
+//   {
+//     "ID": "250328",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr. Mushfika Mizan Swarna"
+//   },
+//   {
+//     "ID": "250329",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Md.Arman Meraj"
+//   },
+//   {
+//     "ID": "250330",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Ascif Al Mahady"
+//   },
+//   {
+//     "ID": "250331",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Fauzia Zaman Manika"
+//   },
+//   {
+//     "ID": "250332",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Farah Yeasmin"
+//   },
+//   {
+//     "ID": "250333",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Md Mamun Morshed"
+//   },
+//   {
+//     "ID": "250334",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Rumky Roshni Jahan"
+//   },
+//   {
+//     "ID": "250335",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Mehbuba Nur Protha"
+//   },
+//   {
+//     "ID": "250336",
+//     "BATCH": "J18",
+//     "FULL NAME": "DR. NUSRAT ISLAM"
+//   },
+//   {
+//     "ID": "250337",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Partho Sarathi Das"
+//   },
+//   {
+//     "ID": "250338",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Rafiqul Islam"
+//   },
+//   {
+//     "ID": "250339",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Salwat Parvin"
+//   },
+//   {
+//     "ID": "250340",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Sajiv K. Saha"
+//   },
+//   {
+//     "ID": "250341",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Md. Safwanur Karim Sakib"
+//   },
+//   {
+//     "ID": "250342",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Md Shafiul Entaz"
+//   },
+//   {
+//     "ID": "250343",
+//     "BATCH": "J18",
+//     "FULL NAME": "Dr. Tasnim Nahid"
+//   },
+//   {
+//     "ID": "250344",
+//     "BATCH": "J19",
+//     "FULL NAME": "Dr. Md. Towkir Ahmed"
+//   },
+//   {
+//     "ID": "250345",
+//     "BATCH": "J19",
+//     "FULL NAME": "Dr. Md. Rezuanul Haque"
+//   },
+//   {
+//     "ID": "250346",
+//     "BATCH": "J19",
+//     "FULL NAME": "Dr. Rownoke Sama"
+//   },
+//   {
+//     "ID": "250347",
+//     "BATCH": "J19",
+//     "FULL NAME": "Dr. Salina Alam"
+//   },
+//   {
+//     "ID": "250348",
+//     "BATCH": "J20",
+//     "FULL NAME": "Dr. Asif Nut Zaman"
+//   },
+//   {
+//     "ID": "250349",
+//     "BATCH": "J20",
+//     "FULL NAME": "Dr. Ayesha Haidar"
+//   },
+//   {
+//     "ID": "250350",
+//     "BATCH": "J20",
+//     "FULL NAME": "Dr. Imran Hasan"
+//   },
+//   {
+//     "ID": "250351",
+//     "BATCH": "J20",
+//     "FULL NAME": "Dr. MD.Mahmudul Hasan"
+//   },
+//   {
+//     "ID": "250352",
+//     "BATCH": "J20",
+//     "FULL NAME": "Dr. Md. Abid Ullah"
+//   },
+//   {
+//     "ID": "250353",
+//     "BATCH": "J21",
+//     "FULL NAME": "Dr. Shabera Shahnaz Osru"
+//   },
+//   {
+//     "ID": "250354",
+//     "BATCH": "J21",
+//     "FULL NAME": "Dr. Masum Sarker"
+//   },
+//   {
+//     "ID": "250355",
+//     "BATCH": "J21",
+//     "FULL NAME": "Dr. Hadiur Rahman Tanzid"
+//   },
+//   {
+//     "ID": "250356",
+//     "BATCH": "J21",
+//     "FULL NAME": "Dr. Faisal Raihan"
+//   },
+//   {
+//     "ID": "250357",
+//     "BATCH": "J21",
+//     "FULL NAME": "Dr. Antora"
+//   },
+//   {
+//     "ID": "250358",
+//     "BATCH": "J21",
+//     "FULL NAME": "Dr. Umme Fatema Tuz Zohura Tamanna"
+//   },
+//   {
+//     "ID": "250359",
+//     "BATCH": "J22",
+//     "FULL NAME": "Dr. Syed Arman Aziz"
+//   },
+//   {
+//     "ID": "250360",
+//     "BATCH": "J22",
+//     "FULL NAME": "Dr. Mustafiz Rashid"
+//   },
+//   {
+//     "ID": "250361",
+//     "BATCH": "J22",
+//     "FULL NAME": "Dr. Foysal Hossain Khan"
+//   },
+//   {
+//     "ID": "250362",
+//     "BATCH": "J22",
+//     "FULL NAME": "Dr. Mazharul Islam Tushar"
+//   },
+//   {
+//     "ID": "250363",
+//     "BATCH": "J22",
+//     "FULL NAME": "Dr. Toha Khondokar"
+//   },
+//   {
+//     "ID": "250364",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Abu rayhan"
+//   },
+//   {
+//     "ID": "250365",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Rahad Hasan"
+//   },
+//   {
+//     "ID": "250366",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Md Habibur Rahman"
+//   },
+//   {
+//     "ID": "250367",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Sazzad Hossain Shihab"
+//   },
+//   {
+//     "ID": "250368",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Inzamamul Haque Shihab"
+//   },
+//   {
+//     "ID": "250369",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. K.M Julfiker Hasan"
+//   },
+//   {
+//     "ID": "250370",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Mosaddek Hossain"
+//   },
+//   {
+//     "ID": "250371",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Rafsan Imran"
+//   },
+//   {
+//     "ID": "250372",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Hridoy sarker"
+//   },
+//   {
+//     "ID": "250373",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Imtiaz Pavel"
+//   },
+//   {
+//     "ID": "250374",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Sajib kanti paul"
+//   },
+//   {
+//     "ID": "250375",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Sheikh Tufazzal Hossain"
+//   },
+//   {
+//     "ID": "250376",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Tarek Hossen"
+//   },
+//   {
+//     "ID": "250377",
+//     "BATCH": "J24",
+//     "FULL NAME": "Dr. Arif Raihan"
+//   },
+//   {
+//     "ID": "250378",
+//     "BATCH": "J24",
+//     "FULL NAME": "Dr. Sumaiya Akter Mou"
+//   },
+//   {
+//     "ID": "250379",
+//     "BATCH": "J25",
+//     "FULL NAME": "Dr. Areefin Nirob"
+//   },
+//   {
+//     "ID": "250380",
+//     "BATCH": "J25",
+//     "FULL NAME": "Dr. Monisha Rani Halder"
+//   },
+//   {
+//     "ID": "250381",
+//     "BATCH": "J25",
+//     "FULL NAME": "Dr. Mohammad Jamshed Ali Emon"
+//   },
+//   {
+//     "ID": "250382",
+//     "BATCH": "J25",
+//     "FULL NAME": "Dr. MD Nazmul Huda Hridoy"
+//   },
+//   {
+//     "ID": "250383",
+//     "BATCH": "J25",
+//     "FULL NAME": "Dr. MD. Abdullah-Al-Noman"
+//   },
+//   {
+//     "ID": "250384",
+//     "BATCH": "J25",
+//     "FULL NAME": "Dr. Shalima Akter"
+//   },
+//   {
+//     "ID": "250385",
+//     "BATCH": "J25",
+//     "FULL NAME": "Dr. Farhana Siddique Sraboni"
+//   },
+//   {
+//     "ID": "250386",
+//     "BATCH": "J26",
+//     "FULL NAME": "Dr. Asif Ahmed"
+//   },
+//   {
+//     "ID": "250387",
+//     "BATCH": "J26",
+//     "FULL NAME": "Dr. Chowdhury Sayef Abdullah"
+//   },
+//   {
+//     "ID": "250388",
+//     "BATCH": "J26",
+//     "FULL NAME": "Dr. Kausar Alam"
+//   },
+//   {
+//     "ID": "250389",
+//     "BATCH": "J26",
+//     "FULL NAME": "Dr. Rathashri Mallik"
+//   },
+//   {
+//     "ID": "250390",
+//     "BATCH": "J26",
+//     "FULL NAME": "Dr. Safwan Shakir"
+//   },
+//   {
+//     "ID": "250391",
+//     "BATCH": "J26",
+//     "FULL NAME": "Dr. Muhammad Saiful Islam"
+//   },
+//   {
+//     "ID": "250392",
+//     "BATCH": "J26",
+//     "FULL NAME": "Dr. Shahin Alam"
+//   },
+//   {
+//     "ID": "250393",
+//     "BATCH": "J26",
+//     "FULL NAME": "Dr. Tahmid Mohammad"
+//   },
+//   {
+//     "ID": "250394",
+//     "BATCH": "J27",
+//     "FULL NAME": "Dr. Ramisha Tahia"
+//   },
+//   {
+//     "ID": "250395",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dr. Mushfiqur Rahman Anik"
+//   },
+//   {
+//     "ID": "250396",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dr. Aishwarjo Moye Nath"
+//   },
+//   {
+//     "ID": "250397",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dr. Maria Rahman"
+//   },
+//   {
+//     "ID": "250398",
+//     "BATCH": "J30",
+//     "FULL NAME": "Rohit Raj"
+//   },
+//   {
+//     "ID": "250399",
+//     "BATCH": "J32",
+//     "FULL NAME": "Nazmin Akter Bristy"
+//   },
+//   {
+//     "ID": "250400",
+//     "BATCH": "J32 ",
+//     "FULL NAME": "Rifat Jahan Tanna"
+//   },
+//   {
+//     "ID": "250401",
+//     "BATCH": "J28",
+//     "FULL NAME": "Nishita Debnath "
+//   },
+//   {
+//     "ID": "250402",
+//     "BATCH": "J28",
+//     "FULL NAME": "Syed Moomin Aiiaz"
+//   },
+//   {
+//     "ID": "250403",
+//     "BATCH": "J28",
+//     "FULL NAME": "Arshi Malik"
+//   },
+//   {
+//     "ID": "250404",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dr.Mirza Nayan"
+//   },
+//   {
+//     "ID": "250405",
+//     "BATCH": "J28",
+//     "FULL NAME": "Sojib Chandra Ghosh "
+//   },
+//   {
+//     "ID": "250406",
+//     "BATCH": "J28",
+//     "FULL NAME": "ROHIT KUMAR"
+//   },
+//   {
+//     "ID": "250407",
+//     "BATCH": "J28",
+//     "FULL NAME": "Jobayer Likhon"
+//   },
+//   {
+//     "ID": "250408",
+//     "BATCH": "J28",
+//     "FULL NAME": "Anima Debnath"
+//   },
+//   {
+//     "ID": "250409",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dr.Fahmida Rahman Mumu"
+//   },
+//   {
+//     "ID": "250410",
+//     "BATCH": "J28",
+//     "FULL NAME": "FAROOJA KHAN"
+//   },
+//   {
+//     "ID": "250411",
+//     "BATCH": "J28",
+//     "FULL NAME": "Bibek Das "
+//   },
+//   {
+//     "ID": "250412",
+//     "BATCH": "J28",
+//     "FULL NAME": "Syed Jahid Anam"
+//   },
+//   {
+//     "ID": "250413",
+//     "BATCH": "J28",
+//     "FULL NAME": "URVA HAROON"
+//   },
+//   {
+//     "ID": "250414",
+//     "BATCH": "J28",
+//     "FULL NAME": "Faria Haque Farin"
+//   },
+//   {
+//     "ID": "250415",
+//     "BATCH": "J28",
+//     "FULL NAME": "Shafin Rafsan"
+//   },
+//   {
+//     "ID": "250416",
+//     "BATCH": "J28",
+//     "FULL NAME": "ASHIMA ADIKARI"
+//   },
+//   {
+//     "ID": "250417",
+//     "BATCH": "J28",
+//     "FULL NAME": "AMANULLAH KARIM"
+//   },
+//   {
+//     "ID": "250418",
+//     "BATCH": "J28",
+//     "FULL NAME": "Nikhil Panjiyar "
+//   },
+//   {
+//     "ID": "250419",
+//     "BATCH": "J28",
+//     "FULL NAME": "Aisha Mahamod "
+//   },
+//   {
+//     "ID": "250420",
+//     "BATCH": "J28",
+//     "FULL NAME": "Sazzad Hossain Shohag "
+//   },
+//   {
+//     "ID": "250421",
+//     "BATCH": "J28",
+//     "FULL NAME": "Nishat farah"
+//   },
+//   {
+//     "ID": "250422",
+//     "BATCH": "J28",
+//     "FULL NAME": "Zobayer Ahmed "
+//   },
+//   {
+//     "ID": "250423",
+//     "BATCH": "J28",
+//     "FULL NAME": "MERAZ HUSSAIN"
+//   },
+//   {
+//     "ID": "250424",
+//     "BATCH": "J28",
+//     "FULL NAME": "Hiba Mallik "
+//   },
+//   {
+//     "ID": "250425",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dr. Tashbim Hossain"
+//   },
+//   {
+//     "ID": "250426",
+//     "BATCH": "J28",
+//     "FULL NAME": "Bishal Raj"
+//   },
+//   {
+//     "ID": "250427",
+//     "BATCH": "J28",
+//     "FULL NAME": "Birjees"
+//   },
+//   {
+//     "ID": "250428",
+//     "BATCH": "J28",
+//     "FULL NAME": "BIBHUTI RANJIT"
+//   },
+//   {
+//     "ID": "250429",
+//     "BATCH": "J28",
+//     "FULL NAME": "Tanveer Shourja"
+//   },
+//   {
+//     "ID": "250430",
+//     "BATCH": "J28",
+//     "FULL NAME": "Maliha Tabassum"
+//   },
+//   {
+//     "ID": "250431",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dr. MD. Rasel Ahmed "
+//   },
+//   {
+//     "ID": "250432",
+//     "BATCH": "J28",
+//     "FULL NAME": "UPASNA YADAV"
+//   },
+//   {
+//     "ID": "250433",
+//     "BATCH": "J28",
+//     "FULL NAME": "ANANYA ROY "
+//   },
+//   {
+//     "ID": "250434",
+//     "BATCH": "J28",
+//     "FULL NAME": "Taha Pirzada"
+//   },
+//   {
+//     "ID": "250435",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dip Somadder"
+//   },
+//   {
+//     "ID": "250436",
+//     "BATCH": "J28",
+//     "FULL NAME": "MD. Abdur Rahman Faysal"
+//   },
+//   {
+//     "ID": "250437",
+//     "BATCH": "J28",
+//     "FULL NAME": "ZAINAB ZAHOOR"
+//   },
+//   {
+//     "ID": "250438",
+//     "BATCH": "J28",
+//     "FULL NAME": "Sk MD Ramij "
+//   },
+//   {
+//     "ID": "250439",
+//     "BATCH": "J28",
+//     "FULL NAME": "Shaiyara Shamma"
+//   },
+//   {
+//     "ID": "250440",
+//     "BATCH": "J28",
+//     "FULL NAME": "Nahid Muntasir Tamim"
+//   },
+//   {
+//     "ID": "250441",
+//     "BATCH": "J28",
+//     "FULL NAME": "Abdur Rahman Mazedul "
+//   },
+//   {
+//     "ID": "250442",
+//     "BATCH": "J28",
+//     "FULL NAME": "AHMAD SAAD"
+//   },
+//   {
+//     "ID": "250443",
+//     "BATCH": "J28",
+//     "FULL NAME": "Ashraf Uddin Mishu"
+//   },
+//   {
+//     "ID": "250444",
+//     "BATCH": "J28",
+//     "FULL NAME": "Naim Iqbal karim"
+//   },
+//   {
+//     "ID": "250445",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dr.Sadia Salsabil"
+//   },
+//   {
+//     "ID": "250446",
+//     "BATCH": "J28",
+//     "FULL NAME": "Angelia Moiranh"
+//   },
+//   {
+//     "ID": "250447",
+//     "BATCH": "J28",
+//     "FULL NAME": "Shraddha Adhikary "
+//   },
+//   {
+//     "ID": "250448",
+//     "BATCH": "J28",
+//     "FULL NAME": "TAIBA KIRMANI"
+//   },
+//   {
+//     "ID": "250449",
+//     "BATCH": "J28",
+//     "FULL NAME": "Suraj sen"
+//   },
+//   {
+//     "ID": "250450",
+//     "BATCH": "J28",
+//     "FULL NAME": "ZARAK SHARMEEN"
+//   },
+//   {
+//     "ID": "250451",
+//     "BATCH": "J28",
+//     "FULL NAME": "Eram Fatima"
+//   },
+//   {
+//     "ID": "250452",
+//     "BATCH": "J28",
+//     "FULL NAME": "Dr.Saiful Islam Ridoy"
+//   },
+//   {
+//     "ID": "250453",
+//     "BATCH": "J28",
+//     "FULL NAME": "Jurham Bin Ishtiq"
+//   },
+//   {
+//     "ID": "250454",
+//     "BATCH": "J28",
+//     "FULL NAME": "Yog Poudyal"
+//   },
+//   {
+//     "ID": "250455",
+//     "BATCH": "J28",
+//     "FULL NAME": "Jannatul Mawah"
+//   },
+//   {
+//     "ID": "250456",
+//     "BATCH": "J28",
+//     "FULL NAME": "Sayeda Lam yea "
+//   },
+//   {
+//     "ID": "250457",
+//     "BATCH": "J28",
+//     "FULL NAME": "Shaharear Hossian Emon "
+//   },
+//   {
+//     "ID": "250458",
+//     "BATCH": "J28",
+//     "FULL NAME": "Faisal Fayaz"
+//   },
+//   {
+//     "ID": "250459",
+//     "BATCH": "J28",
+//     "FULL NAME": "Sehram aijaz jam "
+//   },
+//   {
+//     "ID": "250460",
+//     "BATCH": "J28",
+//     "FULL NAME": "SAYIR SAJAD BHAT"
+//   },
+//   {
+//     "ID": "250461",
+//     "BATCH": "J28",
+//     "FULL NAME": "Nusrat jahan Ripa"
+//   },
+//   {
+//     "ID": "250462",
+//     "BATCH": "J28",
+//     "FULL NAME": "Fatimah tasnim khan "
+//   },
+//   {
+//     "ID": "250463",
+//     "BATCH": "J28",
+//     "FULL NAME": "Annesha Deb"
+//   },
+//   {
+//     "ID": "250464",
+//     "BATCH": "J28",
+//     "FULL NAME": "Tanveer Shourja"
+//   },
+//   {
+//     "ID": "250465",
+//     "BATCH": "J29",
+//     "FULL NAME": "Tanaj Anha"
+//   },
+//   {
+//     "ID": "250466",
+//     "BATCH": "J29",
+//     "FULL NAME": "Sagor Patel"
+//   },
+//   {
+//     "ID": "250467",
+//     "BATCH": "J29",
+//     "FULL NAME": "Mir Madeeha"
+//   },
+//   {
+//     "ID": "250468",
+//     "BATCH": "J29",
+//     "FULL NAME": "Aishan Mearaj"
+//   },
+//   {
+//     "ID": "250469",
+//     "BATCH": "J29",
+//     "FULL NAME": "Sashwat Sainju"
+//   },
+//   {
+//     "ID": "250470",
+//     "BATCH": "J29",
+//     "FULL NAME": "Soham kumar Singha "
+//   },
+//   {
+//     "ID": "250471",
+//     "BATCH": "J29",
+//     "FULL NAME": "Dr. Alisha Rahman"
+//   },
+//   {
+//     "ID": "250472",
+//     "BATCH": "J29",
+//     "FULL NAME": "Bipul"
+//   },
+//   {
+//     "ID": "250473",
+//     "BATCH": "J29",
+//     "FULL NAME": "Afra Alom Somaiya "
+//   },
+//   {
+//     "ID": "250474",
+//     "BATCH": "J29",
+//     "FULL NAME": "Pranali Yanglem"
+//   },
+//   {
+//     "ID": "250475",
+//     "BATCH": "J29",
+//     "FULL NAME": "Jannate Jinia Supti"
+//   },
+//   {
+//     "ID": "250476",
+//     "BATCH": "J29",
+//     "FULL NAME": "Raj Kishor Prasad Kurmi"
+//   },
+//   {
+//     "ID": "250477",
+//     "BATCH": "J29",
+//     "FULL NAME": "Dr. Salma Khatun "
+//   },
+//   {
+//     "ID": "250478",
+//     "BATCH": "J29",
+//     "FULL NAME": "ABU BAKAR SIDDIK"
+//   },
+//   {
+//     "ID": "250479",
+//     "BATCH": "J29",
+//     "FULL NAME": "Binisha Sunuwar "
+//   },
+//   {
+//     "ID": "250480",
+//     "BATCH": "J29",
+//     "FULL NAME": "RAHUL SHAH"
+//   },
+//   {
+//     "ID": "250481",
+//     "BATCH": "J29",
+//     "FULL NAME": "Haamid Dar"
+//   },
+//   {
+//     "ID": "250482",
+//     "BATCH": "J29",
+//     "FULL NAME": "Sanzida Monira"
+//   },
+//   {
+//     "ID": "250483",
+//     "BATCH": "J29",
+//     "FULL NAME": "SUBHASISH DEB"
+//   },
+//   {
+//     "ID": "250484",
+//     "BATCH": "J29",
+//     "FULL NAME": "Aditi Pradhananga"
+//   },
+//   {
+//     "ID": "250485",
+//     "BATCH": "J29",
+//     "FULL NAME": "Bulbul Ahamed Zony"
+//   },
+//   {
+//     "ID": "250486",
+//     "BATCH": "J29",
+//     "FULL NAME": "Mausam Shrestha"
+//   },
+//   {
+//     "ID": "250487",
+//     "BATCH": "J29",
+//     "FULL NAME": "Rakshya Adhikarai"
+//   },
+//   {
+//     "ID": "250488",
+//     "BATCH": "J29",
+//     "FULL NAME": "Abbishek"
+//   },
+//   {
+//     "ID": "250489",
+//     "BATCH": "J29",
+//     "FULL NAME": "Rituparna Diswas "
+//   },
+//   {
+//     "ID": "250490",
+//     "BATCH": "J29",
+//     "FULL NAME": "Niladri"
+//   },
+//   {
+//     "ID": "250491",
+//     "BATCH": "J29",
+//     "FULL NAME": "Rajan Chaurasia"
+//   },
+//   {
+//     "ID": "250492",
+//     "BATCH": "J29",
+//     "FULL NAME": "Saima Sultana"
+//   },
+//   {
+//     "ID": "250493",
+//     "BATCH": "J29",
+//     "FULL NAME": "Amir Turkey"
+//   },
+//   {
+//     "ID": "250494",
+//     "BATCH": "J29",
+//     "FULL NAME": "Himadry Das"
+//   },
+//   {
+//     "ID": "250495",
+//     "BATCH": "J03",
+//     "FULL NAME": "Dr Mohammed Ataur Rahman"
+//   },
+//   {
+//     "ID": "250496",
+//     "BATCH": "J04",
+//     "FULL NAME": "NILUFAR ASGAR"
+//   },
+//   {
+//     "ID": "250497",
+//     "BATCH": "J05",
+//     "FULL NAME": "Dr Anima Dabi"
+//   },
+//   {
+//     "ID": "250498",
+//     "BATCH": "J07",
+//     "FULL NAME": "Mohammad Saiful islam"
+//   },
+//   {
+//     "ID": "250499",
+//     "BATCH": "J11",
+//     "FULL NAME": "Dr md Humayun Kabir"
+//   },
+//   {
+//     "ID": "250500",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr Tajrin Akter Munni"
+//   },
+//   {
+//     "ID": "250501",
+//     "BATCH": "J12",
+//     "FULL NAME": "Prof Dr Hafizir Rahman"
+//   },
+//   {
+//     "ID": "250502",
+//     "BATCH": "J12",
+//     "FULL NAME": "Dr Dil Afroz"
+//   },
+//   {
+//     "ID": "250503",
+//     "BATCH": "J12",
+//     "FULL NAME": "Abu Rayhan Siddique "
+//   },
+//   {
+//     "ID": "250504",
+//     "BATCH": "J13",
+//     "FULL NAME": "Dr MD Rahmat Ullah"
+//   },
+//   {
+//     "ID": "250505",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr MD Shariful Alam"
+//   },
+//   {
+//     "ID": "250506",
+//     "BATCH": "J15",
+//     "FULL NAME": "Dr Mohammee Jumman"
+//   },
+//   {
+//     "ID": "250507",
+//     "BATCH": "J17",
+//     "FULL NAME": "Md Mufradul Islam Rafi"
+//   },
+//   {
+//     "ID": "250508",
+//     "BATCH": "J17",
+//     "FULL NAME": "Dr md Monirul islam"
+//   },
+//   {
+//     "ID": "250509",
+//     "BATCH": "J17",
+//     "FULL NAME": "Samia Jesmin Nipa"
+//   },
+//   {
+//     "ID": "250510",
+//     "BATCH": "J20",
+//     "FULL NAME": "Hasib Ahmmed Oli"
+//   },
+//   {
+//     "ID": "250511",
+//     "BATCH": "J20",
+//     "FULL NAME": "Dr Abdullah "
+//   },
+//   {
+//     "ID": "250512",
+//     "BATCH": "J20",
+//     "FULL NAME": "Dr Tarrk ul Islam"
+//   },
+//   {
+//     "ID": "250513",
+//     "BATCH": "J20",
+//     "FULL NAME": "Dr Mushfiqa Ferdous "
+//   },
+//   {
+//     "ID": "250514",
+//     "BATCH": "J21",
+//     "FULL NAME": "Dr Jannatul Naim"
+//   },
+//   {
+//     "ID": "250515",
+//     "BATCH": "J22",
+//     "FULL NAME": "Mahmudul Arefeen Khan"
+//   },
+//   {
+//     "ID": "250516",
+//     "BATCH": "J22",
+//     "FULL NAME": "Dr Hasna Hena"
+//   },
+//   {
+//     "ID": "250517",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr. Ishtiak Ahmed"
+//   },
+//   {
+//     "ID": "250518",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr Shafiqul Islam Nahin"
+//   },
+//   {
+//     "ID": "250519",
+//     "BATCH": "J23",
+//     "FULL NAME": "Farjana Tabassum"
+//   },
+//   {
+//     "ID": "250520",
+//     "BATCH": "J23",
+//     "FULL NAME": "Md Nazmul Hasan Ahid"
+//   },
+//   {
+//     "ID": "250521",
+//     "BATCH": "J23",
+//     "FULL NAME": "Dr Nazmul Islam"
+//   },
+//   {
+//     "ID": "250522",
+//     "BATCH": "J24",
+//     "FULL NAME": "Monayem Ahmed "
+//   },
+//   {
+//     "ID": "250523",
+//     "BATCH": "J24",
+//     "FULL NAME": "Shajib Sarker Niloy"
+//   },
+//   {
+//     "ID": "250524",
+//     "BATCH": "J24",
+//     "FULL NAME": "Dr .Md Rubel Mia"
+//   },
+//   {
+//     "ID": "250525",
+//     "BATCH": "J25",
+//     "FULL NAME": "Md. Mehedi hasan"
+//   },
+//   {
+//     "ID": "250526",
+//     "BATCH": "J25",
+//     "FULL NAME": "Noshin Tabassum"
+//   },
+//   {
+//     "ID": "250527",
+//     "BATCH": "J25",
+//     "FULL NAME": "Nushrat Jahan Mitu"
+//   },
+//   {
+//     "ID": "250528",
+//     "BATCH": "J26",
+//     "FULL NAME": "Sabuj Das"
+//   },
+//   {
+//     "ID": "250529",
+//     "BATCH": "J26",
+//     "FULL NAME": "B.M Toukir Ahmed Tulib"
+//   },
+//   {
+//     "ID": "250530",
+//     "BATCH": "J26",
+//     "FULL NAME": "Abdul Wadud"
+//   },
+//   {
+//     "ID": "250531",
+//     "BATCH": "J26",
+//     "FULL NAME": "Jannatul Ferdous"
+//   },
+//   {
+//     "ID": "250532",
+//     "BATCH": "J26",
+//     "FULL NAME": "Yousuf Bhuiyan"
+//   },
+//   {
+//     "ID": "250533",
+//     "BATCH": "J26",
+//     "FULL NAME": "Dr Sujon Karmaker"
+//   },
+//   {
+//     "ID": "250534",
+//     "BATCH": "",
+//     "FULL NAME": "Dr. PRANTA SUTRADHAR"
+//   },
+//   {
+//     "ID": "250535",
+//     "BATCH": "",
+//     "FULL NAME": "Dr md Tuhin khandakar"
+//   },
+//   {
+//     "ID": "250536",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Md Arafat Rahman Royal"
+//   },
+//   {
+//     "ID": "250537",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Dipali Rani pal"
+//   },
+//   {
+//     "ID": "250538",
+//     "BATCH": "",
+//     "FULL NAME": "Dr. Joya Chakraborty "
+//   },
+//   {
+//     "ID": "250539",
+//     "BATCH": "",
+//     "FULL NAME": "Jiasmin sultana jotey"
+//   },
+//   {
+//     "ID": "250540",
+//     "BATCH": "",
+//     "FULL NAME": "Dr. Shahadat Hossain"
+//   },
+//   {
+//     "ID": "250541",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Anamul Kabir"
+//   },
+//   {
+//     "ID": "250542",
+//     "BATCH": "",
+//     "FULL NAME": "Dr suny ajmery"
+//   },
+//   {
+//     "ID": "250543",
+//     "BATCH": "",
+//     "FULL NAME": "Dr MD Omar ali"
+//   },
+//   {
+//     "ID": "250544",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Dr Muhammad Rukunuzzaman"
+//   },
+//   {
+//     "ID": "250545",
+//     "BATCH": "",
+//     "FULL NAME": "MD. IQBAL MIA"
+//   },
+//   {
+//     "ID": "250546",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Kalyan kirtania"
+//   },
+//   {
+//     "ID": "250547",
+//     "BATCH": "",
+//     "FULL NAME": "Dr. Tareq Ibna Aziz"
+//   },
+//   {
+//     "ID": "250548",
+//     "BATCH": "",
+//     "FULL NAME": "Mahmuda Nasrin"
+//   },
+//   {
+//     "ID": "250549",
+//     "BATCH": "",
+//     "FULL NAME": "Prof. Mohammad Saifule Islam "
+//   },
+//   {
+//     "ID": "250550",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Dr Kazi Azadul Hoque"
+//   },
+//   {
+//     "ID": "250551",
+//     "BATCH": "",
+//     "FULL NAME": "Dr. Md. MASHIOUR RAHMAN RIKABDER"
+//   },
+//   {
+//     "ID": "250552",
+//     "BATCH": "",
+//     "FULL NAME": "A.S.M Robiath"
+//   },
+//   {
+//     "ID": "250553",
+//     "BATCH": "",
+//     "FULL NAME": "Dr. Shimu Akter Ayshi"
+//   },
+//   {
+//     "ID": "250554",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Paritosh Chandra Paul"
+//   },
+//   {
+//     "ID": "250555",
+//     "BATCH": "",
+//     "FULL NAME": "Dr.MD.ZABED AHMED MITU"
+//   },
+//   {
+//     "ID": "250556",
+//     "BATCH": "",
+//     "FULL NAME": "Dr. Shamim Rahman "
+//   },
+//   {
+//     "ID": "250557",
+//     "BATCH": "",
+//     "FULL NAME": "Mohammad Tayeb"
+//   },
+//   {
+//     "ID": "250558",
+//     "BATCH": "",
+//     "FULL NAME": "Dr. AKM MARUF RAZA"
+//   },
+//   {
+//     "ID": "250559",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Dr MD Sayeed Hasan"
+//   },
+//   {
+//     "ID": "250560",
+//     "BATCH": "",
+//     "FULL NAME": "FARAH ULFATH"
+//   },
+//   {
+//     "ID": "250561",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Mohammad Khalequl Islam"
+//   },
+//   {
+//     "ID": "250562",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Bahar Uddin Bhuiyan"
+//   },
+//   {
+//     "ID": "250563",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Rumy Tabrez Hyder"
+//   },
+//   {
+//     "ID": "250564",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Zahirul Kabir Khan"
+//   },
+//   {
+//     "ID": "250565",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Mushfiq Murtaza"
+//   },
+//   {
+//     "ID": "250566",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Monira Ahmed"
+//   },
+//   {
+//     "ID": "250567",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Iffat ara"
+//   },
+//   {
+//     "ID": "250568",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Md Rezaul Bari"
+//   },
+//   {
+//     "ID": "250569",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Md Zakir Hossain"
+//   },
+//   {
+//     "ID": "250570",
+//     "BATCH": "",
+//     "FULL NAME": "Prof A.K.M Fazlul Baqi"
+//   },
+//   {
+//     "ID": "250571",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Khandakar Maqsudul Haque"
+//   },
+//   {
+//     "ID": "250572",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Prajit Kumar Deb"
+//   },
+//   {
+//     "ID": "250573",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Md Abdullah -Al-Mamun"
+//   },
+//   {
+//     "ID": "250574",
+//     "BATCH": "",
+//     "FULL NAME": "Prof S.abdullah Al Farooq"
+//   },
+//   {
+//     "ID": "250575",
+//     "BATCH": "",
+//     "FULL NAME": "Dr  Shaurav Talukder"
+//   },
+//   {
+//     "ID": "250576",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Pratima paul"
+//   },
+//   {
+//     "ID": "250577",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Dr Ismot Ara"
+//   },
+//   {
+//     "ID": "250578",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Rakibul Hasan"
+//   },
+//   {
+//     "ID": "250579",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Dr Ismail Hossain"
+//   },
+//   {
+//     "ID": "250580",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Shahida Sultana"
+//   },
+//   {
+//     "ID": "250581",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Rafsanul islam chotan"
+//   },
+//   {
+//     "ID": "250582",
+//     "BATCH": "",
+//     "FULL NAME": "Muhammad Omeo Islam"
+//   },
+//   {
+//     "ID": "250583",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Gulam Yeahia Ahmed"
+//   },
+//   {
+//     "ID": "250584",
+//     "BATCH": "",
+//     "FULL NAME": "Prof A.H.M. Zahirul islam Biswas"
+//   },
+//   {
+//     "ID": "250585",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Md Mahbubur Rahman "
+//   },
+//   {
+//     "ID": "250586",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Debabrata Paul"
+//   },
+//   {
+//     "ID": "250587",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Syed Shawkat ahmed"
+//   },
+//   {
+//     "ID": "250588",
+//     "BATCH": "",
+//     "FULL NAME": "Dr md Mizanur Rahman Shahin"
+//   },
+//   {
+//     "ID": "250589",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Muhammad Shamsul Islam"
+//   },
+//   {
+//     "ID": "250590",
+//     "BATCH": "",
+//     "FULL NAME": "Mohammad Selim"
+//   },
+//   {
+//     "ID": "250591",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Khan Md Nazmus Saqeb"
+//   },
+//   {
+//     "ID": "250592",
+//     "BATCH": "",
+//     "FULL NAME": "Dr Sultan Mohammad Yousuf Bhuiya"
+//   },
+//   {
+//     "ID": "250593",
+//     "BATCH": "",
+//     "FULL NAME": "Dr. BUrhan Uddin Khan"
+//   },
+//   {
+//     "ID": "250594",
+//     "BATCH": "",
+//     "FULL NAME": "Prof Rashed Chowdhury"
+//   },
+//   {
+//     "ID": "250595",
+//     "BATCH": "J29",
+//     "FULL NAME": "Omar Faruk Arif"
+//   },
+//   {
+//     "ID": "250596",
+//     "BATCH": "J30",
+//     "FULL NAME": "MAVIYA YASEEN LONE"
+//   },
+//   {
+//     "ID": "250597",
+//     "BATCH": "J30",
+//     "FULL NAME": "Raktarun Nath"
+//   },
+//   {
+//     "ID": "250598",
+//     "BATCH": "J30",
+//     "FULL NAME": "Zannat Jabin"
+//   },
+//   {
+//     "ID": "250599",
+//     "BATCH": "J30",
+//     "FULL NAME": "Deena Humayra"
+//   },
+//   {
+//     "ID": "250600",
+//     "BATCH": "J30",
+//     "FULL NAME": "Seejal K.C"
+//   },
+//   {
+//     "ID": "250601",
+//     "BATCH": "J30",
+//     "FULL NAME": "Rizuwana Islam Hridoy"
+//   },
+//   {
+//     "ID": "250602",
+//     "BATCH": "J30",
+//     "FULL NAME": "HANYAA SHAH"
+//   },
+//   {
+//     "ID": "250603",
+//     "BATCH": "J30",
+//     "FULL NAME": "Israt Jahan"
+//   },
+//   {
+//     "ID": "250604",
+//     "BATCH": "J30",
+//     "FULL NAME": "Sanjidul Islam shawon"
+//   },
+//   {
+//     "ID": "250605",
+//     "BATCH": "J30",
+//     "FULL NAME": "Fariha Haider Ushan "
+//   },
+//   {
+//     "ID": "250606",
+//     "BATCH": "J30",
+//     "FULL NAME": "Matin Sheikh"
+//   },
+//   {
+//     "ID": "250607",
+//     "BATCH": "J30",
+//     "FULL NAME": "Debashmita Das"
+//   },
+//   {
+//     "ID": "250608",
+//     "BATCH": "J30",
+//     "FULL NAME": "MAHBUB ALAM"
+//   },
+//   {
+//     "ID": "250609",
+//     "BATCH": "J30",
+//     "FULL NAME": "Srijeeta De"
+//   },
+//   {
+//     "ID": "250610",
+//     "BATCH": "J30",
+//     "FULL NAME": "All Hasan fahim "
+//   },
+//   {
+//     "ID": "250611",
+//     "BATCH": "J30",
+//     "FULL NAME": "SHARANYA SHARVANI"
+//   },
+//   {
+//     "ID": "250612",
+//     "BATCH": "J30",
+//     "FULL NAME": "Jerin Sultana "
+//   },
+//   {
+//     "ID": "250613",
+//     "BATCH": "J30",
+//     "FULL NAME": "Sadiqua karim"
+//   },
+//   {
+//     "ID": "250614",
+//     "BATCH": "J30",
+//     "FULL NAME": "Akhlima khanom"
+//   },
+//   {
+//     "ID": "250615",
+//     "BATCH": "J30",
+//     "FULL NAME": "Ashish Bhardwas"
+//   },
+//   {
+//     "ID": "250616",
+//     "BATCH": "J30",
+//     "FULL NAME": "MD. Fahim Ahmed Bhuiyan "
+//   },
+//   {
+//     "ID": "250617",
+//     "BATCH": "J30",
+//     "FULL NAME": "Vaibhav sharma"
+//   },
+//   {
+//     "ID": "250618",
+//     "BATCH": "J30",
+//     "FULL NAME": "Kisar Ahmed "
+//   },
+//   {
+//     "ID": "250619",
+//     "BATCH": "J30",
+//     "FULL NAME": "Mohamed Rejaur Rahman "
+//   },
+//   {
+//     "ID": "250620",
+//     "BATCH": "J30",
+//     "FULL NAME": "Cenchuria Khaidem"
+//   },
+//   {
+//     "ID": "250621",
+//     "BATCH": "J30",
+//     "FULL NAME": "AADARSHREE MAHARJAN"
+//   },
+//   {
+//     "ID": "250622",
+//     "BATCH": "J30",
+//     "FULL NAME": "MD. TOWFIQI RABBY CHOWDHURY"
+//   },
+//   {
+//     "ID": "250623",
+//     "BATCH": "J30",
+//     "FULL NAME": "Fahim Faysal Asif"
+//   },
+//   {
+//     "ID": "250624",
+//     "BATCH": "J30",
+//     "FULL NAME": "Jarin Tasnim"
+//   },
+//   {
+//     "ID": "250625",
+//     "BATCH": "J30",
+//     "FULL NAME": "Mahir Muntasir Bhuiyan "
+//   },
+//   {
+//     "ID": "250626",
+//     "BATCH": "J30",
+//     "FULL NAME": "AYONTAK SARKER "
+//   },
+//   {
+//     "ID": "250627",
+//     "BATCH": "J30",
+//     "FULL NAME": "Animesh Das Akash "
+//   },
+//   {
+//     "ID": "250628",
+//     "BATCH": "J30",
+//     "FULL NAME": "Abhijeet Mandal"
+//   },
+//   {
+//     "ID": "250629",
+//     "BATCH": "J30",
+//     "FULL NAME": "Suraiya Islam"
+//   },
+//   {
+//     "ID": "250630",
+//     "BATCH": "J30",
+//     "FULL NAME": "Md. Mukarom Hossain"
+//   },
+//   {
+//     "ID": "250631",
+//     "BATCH": "J30",
+//     "FULL NAME": "Atikur Rohmon Hriday "
+//   },
+//   {
+//     "ID": "250632",
+//     "BATCH": "J30",
+//     "FULL NAME": "MEHEDI HASAN SHUVO"
+//   },
+//   {
+//     "ID": "250633",
+//     "BATCH": "J30",
+//     "FULL NAME": "Tasnuba Alam Srabony"
+//   },
+//   {
+//     "ID": "250634",
+//     "BATCH": "J30",
+//     "FULL NAME": "Ashraful Kabir "
+//   },
+//   {
+//     "ID": "250635",
+//     "BATCH": "J30",
+//     "FULL NAME": "Afra anon diya"
+//   },
+//   {
+//     "ID": "250636",
+//     "BATCH": "J30",
+//     "FULL NAME": "Tahsin Tasnim"
+//   },
+//   {
+//     "ID": "250637",
+//     "BATCH": "J30",
+//     "FULL NAME": "Bhagasnee Debnath Tisa "
+//   },
+//   {
+//     "ID": "250638",
+//     "BATCH": "J30",
+//     "FULL NAME": "MD. ALIM ALL RAZY"
+//   },
+//   {
+//     "ID": "250639",
+//     "BATCH": "J30",
+//     "FULL NAME": "Md Rakibul Islam "
+//   },
+//   {
+//     "ID": "250640",
+//     "BATCH": "J30",
+//     "FULL NAME": "Mansur Bin Anowar"
+//   },
+//   {
+//     "ID": "250641",
+//     "BATCH": "J30",
+//     "FULL NAME": "Arfina jannat"
+//   },
+//   {
+//     "ID": "250642",
+//     "BATCH": "J30",
+//     "FULL NAME": "RAMIS WASI"
+//   },
+//   {
+//     "ID": "250643",
+//     "BATCH": "J30",
+//     "FULL NAME": "Shangida Akter Mitu "
+//   },
+//   {
+//     "ID": "250644",
+//     "BATCH": "J30",
+//     "FULL NAME": "Sunaya Yeasmin Mukta"
+//   },
+//   {
+//     "ID": "250645",
+//     "BATCH": "J30",
+//     "FULL NAME": "Md Anasuzzaman"
+//   },
+//   {
+//     "ID": "250646",
+//     "BATCH": "J30",
+//     "FULL NAME": "Seram seleena devi"
+//   },
+//   {
+//     "ID": "250647",
+//     "BATCH": "J30",
+//     "FULL NAME": "MD. ASHIKUR RAHMAN"
+//   },
+//   {
+//     "ID": "250648",
+//     "BATCH": "J30",
+//     "FULL NAME": "Mahfuzur Rahman Laskar"
+//   },
+//   {
+//     "ID": "250649",
+//     "BATCH": "J30",
+//     "FULL NAME": "Indrani debnath"
+//   },
+//   {
+//     "ID": "250650",
+//     "BATCH": "J30",
+//     "FULL NAME": "Adiba Sharmin "
+//   },
+//   {
+//     "ID": "250651",
+//     "BATCH": "J30",
+//     "FULL NAME": "HEENA AKHTAR"
+//   },
+//   {
+//     "ID": "250652",
+//     "BATCH": "J30",
+//     "FULL NAME": "K M Hasan Al Mamun Khaled "
+//   },
+//   {
+//     "ID": "250653",
+//     "BATCH": "J30",
+//     "FULL NAME": "Shahrier Mohammad Sanjid"
+//   },
+//   {
+//     "ID": "250654",
+//     "BATCH": "J30",
+//     "FULL NAME": "ARAFAT ISLAM"
+//   },
+//   {
+//     "ID": "250655",
+//     "BATCH": "J30",
+//     "FULL NAME": "Rohit Raj Singh"
+//   },
+//   {
+//     "ID": "250656",
+//     "BATCH": "J30",
+//     "FULL NAME": "Sarthak Sahu"
+//   },
+//   {
+//     "ID": "250657",
+//     "BATCH": "J30",
+//     "FULL NAME": "Sanjida Shaharia Mishu "
+//   },
+//   {
+//     "ID": "250658",
+//     "BATCH": "J30",
+//     "FULL NAME": "Sohini Dutta"
+//   },
+//   {
+//     "ID": "250659",
+//     "BATCH": "J30",
+//     "FULL NAME": "MD. SYMON UDDIN"
+//   },
+//   {
+//     "ID": "250660",
+//     "BATCH": "J30",
+//     "FULL NAME": "Ajindra Rai "
+//   },
+//   {
+//     "ID": "250661",
+//     "BATCH": "J30",
+//     "FULL NAME": "Syeda Nousin Sultana Promi"
+//   },
+//   {
+//     "ID": "250662",
+//     "BATCH": "J30",
+//     "FULL NAME": "MUNTASIB MUKHTAR"
+//   },
+//   {
+//     "ID": "250663",
+//     "BATCH": "J30",
+//     "FULL NAME": "Daniyal Rahman "
+//   },
+//   {
+//     "ID": "250664",
+//     "BATCH": "J30",
+//     "FULL NAME": "Md. Sunzed Hossain"
+//   },
+//   {
+//     "ID": "250665",
+//     "BATCH": "J30",
+//     "FULL NAME": "KHALED BIN ALAM"
+//   },
+//   {
+//     "ID": "250666",
+//     "BATCH": "J30",
+//     "FULL NAME": "Nur A Nafisha Ashru"
+//   },
+//   {
+//     "ID": "250667",
+//     "BATCH": "J30",
+//     "FULL NAME": "Muhammad Ammar Lone"
+//   },
+//   {
+//     "ID": "250668",
+//     "BATCH": "J30",
+//     "FULL NAME": "Mahbuba Akter "
+//   },
+//   {
+//     "ID": "250669",
+//     "BATCH": "J30",
+//     "FULL NAME": "Madiha Mustaq"
+//   },
+//   {
+//     "ID": "250670",
+//     "BATCH": "J30",
+//     "FULL NAME": "Rupsana Akter Mim"
+//   },
+//   {
+//     "ID": "250671",
+//     "BATCH": "J30",
+//     "FULL NAME": "OMAR AZIZ"
+//   },
+//   {
+//     "ID": "250672",
+//     "BATCH": "J30",
+//     "FULL NAME": "Akhlaq Asif"
+//   },
+//   {
+//     "ID": "250673",
+//     "BATCH": "J30",
+//     "FULL NAME": "Taosiath Bjnte Taslim"
+//   },
+//   {
+//     "ID": "250674",
+//     "BATCH": "J30",
+//     "FULL NAME": "Ani Sarker "
+//   },
+//   {
+//     "ID": "250675",
+//     "BATCH": "J30",
+//     "FULL NAME": "Fatima Binta Mizan"
+//   },
+//   {
+//     "ID": "250676",
+//     "BATCH": "J30",
+//     "FULL NAME": "Shomiaz Wameen"
+//   },
+//   {
+//     "ID": "250677",
+//     "BATCH": "J30",
+//     "FULL NAME": "SOUMI DUTTA"
+//   },
+//   {
+//     "ID": "250678",
+//     "BATCH": "J30",
+//     "FULL NAME": "Jarin Tasnim Samanta"
+//   },
+//   {
+//     "ID": "250679",
+//     "BATCH": "J30",
+//     "FULL NAME": "Asra Rafiq Shah"
+//   },
+//   {
+//     "ID": "250680",
+//     "BATCH": "J30",
+//     "FULL NAME": "Novera Tasnuva "
+//   },
+//   {
+//     "ID": "250681",
+//     "BATCH": "J30",
+//     "FULL NAME": "TASFIA SALAM DIBA"
+//   },
+//   {
+//     "ID": "250682",
+//     "BATCH": "J30",
+//     "FULL NAME": "Sahana Islam Shaki"
+//   },
+//   {
+//     "ID": "250683",
+//     "BATCH": "J30",
+//     "FULL NAME": "Imad Farooq"
+//   },
+//   {
+//     "ID": "250684",
+//     "BATCH": "J30",
+//     "FULL NAME": "NIRMALYA MAJUMDER"
+//   },
+//   {
+//     "ID": "250685",
+//     "BATCH": "J30",
+//     "FULL NAME": "Cheelvi yumnam"
+//   },
+//   {
+//     "ID": "250686",
+//     "BATCH": "J30",
+//     "FULL NAME": "Aafra Mustafa Want "
+//   },
+//   {
+//     "ID": "250687",
+//     "BATCH": "J30",
+//     "FULL NAME": "Zobia Shah"
+//   },
+//   {
+//     "ID": "250688",
+//     "BATCH": "J30",
+//     "FULL NAME": "RITU DEBNATH BARSHA"
+//   },
+//   {
+//     "ID": "250689",
+//     "BATCH": "J30",
+//     "FULL NAME": "Sumaya Hossain Bela "
+//   },
+//   {
+//     "ID": "250690",
+//     "BATCH": "J30",
+//     "FULL NAME": "Afrin shorna"
+//   },
+//   {
+//     "ID": "250691",
+//     "BATCH": "J30",
+//     "FULL NAME": "Rayyan Firdous"
+//   },
+//   {
+//     "ID": "250692",
+//     "BATCH": "J30",
+//     "FULL NAME": "MD.ZOOBAER IBNE MAHMUD"
+//   },
+//   {
+//     "ID": "250693",
+//     "BATCH": "J30",
+//     "FULL NAME": "Fahmida Rahman Prapti "
+//   },
+//   {
+//     "ID": "250694",
+//     "BATCH": "J30",
+//     "FULL NAME": "Aashish Ppudel"
+//   },
+//   {
+//     "ID": "250695",
+//     "BATCH": "J30",
+//     "FULL NAME": "Rafaeat Jamil "
+//   },
+//   {
+//     "ID": "250696",
+//     "BATCH": "J30",
+//     "FULL NAME": "Anubhob sinha"
+//   },
+//   {
+//     "ID": "250697",
+//     "BATCH": "J30",
+//     "FULL NAME": "SYED TARIKUL HASAN"
+//   },
+//   {
+//     "ID": "250698",
+//     "BATCH": "J30",
+//     "FULL NAME": "Monoleen paul (Borno)"
+//   },
+//   {
+//     "ID": "250699",
+//     "BATCH": "J30",
+//     "FULL NAME": "LABIB SHAHRIAR"
+//   },
+//   {
+//     "ID": "250700",
+//     "BATCH": "J30",
+//     "FULL NAME": "Md. Main Hossain Tur"
+//   },
+//   {
+//     "ID": "250701",
+//     "BATCH": "J30",
+//     "FULL NAME": "Agam"
+//   },
+//   {
+//     "ID": "250702",
+//     "BATCH": "J31",
+//     "FULL NAME": "Horiprosad Roy Polok"
+//   },
+//   {
+//     "ID": "250703",
+//     "BATCH": "J31",
+//     "FULL NAME": "Abhiroop Bhattacharya"
+//   },
+//   {
+//     "ID": "250704",
+//     "BATCH": "J31",
+//     "FULL NAME": "Nishat Wasima "
+//   },
+//   {
+//     "ID": "250705",
+//     "BATCH": "J31",
+//     "FULL NAME": "Mahmudul Hasan"
+//   },
+//   {
+//     "ID": "250706",
+//     "BATCH": "J31",
+//     "FULL NAME": "Subhadeep Sahoo"
+//   },
+//   {
+//     "ID": "250707",
+//     "BATCH": "J31",
+//     "FULL NAME": "UZNAIN JAMSHEED"
+//   },
+//   {
+//     "ID": "250708",
+//     "BATCH": "J31",
+//     "FULL NAME": "Hafsa aftab"
+//   },
+//   {
+//     "ID": "250709",
+//     "BATCH": "J31",
+//     "FULL NAME": "Likmabam Syatish Singh "
+//   },
+//   {
+//     "ID": "250710",
+//     "BATCH": "J31",
+//     "FULL NAME": "MD.NURA ALAM"
+//   },
+//   {
+//     "ID": "250711",
+//     "BATCH": "J31",
+//     "FULL NAME": "Snigdha Rani Sarker "
+//   },
+//   {
+//     "ID": "250712",
+//     "BATCH": "J31",
+//     "FULL NAME": "Md. Fardinuzzaman"
+//   },
+//   {
+//     "ID": "250713",
+//     "BATCH": "J31",
+//     "FULL NAME": "LEEBA THAKUR"
+//   },
+//   {
+//     "ID": "250714",
+//     "BATCH": "J31",
+//     "FULL NAME": "Abir Mahmud"
+//   },
+//   {
+//     "ID": "250715",
+//     "BATCH": "J31",
+//     "FULL NAME": "Ariba Tanha pritha"
+//   },
+//   {
+//     "ID": "250716",
+//     "BATCH": "J31",
+//     "FULL NAME": "James Langpoklakpam"
+//   },
+//   {
+//     "ID": "250717",
+//     "BATCH": "J31",
+//     "FULL NAME": "Lamisa Rahman Protyasha "
+//   },
+//   {
+//     "ID": "250718",
+//     "BATCH": "J31",
+//     "FULL NAME": "RUTBA SHAFAT"
+//   },
+//   {
+//     "ID": "250719",
+//     "BATCH": "J31",
+//     "FULL NAME": "MD. Mahfuzur Rahman Rafi "
+//   },
+//   {
+//     "ID": "250720",
+//     "BATCH": "J31",
+//     "FULL NAME": "NUSRAT JAHAN"
+//   },
+//   {
+//     "ID": "250721",
+//     "BATCH": "J31",
+//     "FULL NAME": "Ehasanul Haque"
+//   },
+//   {
+//     "ID": "250722",
+//     "BATCH": "J31",
+//     "FULL NAME": "Badu Ammar Yahya"
+//   },
+//   {
+//     "ID": "250723",
+//     "BATCH": "J31",
+//     "FULL NAME": "Mobarak Hossain Rifat "
+//   },
+//   {
+//     "ID": "250724",
+//     "BATCH": "J31",
+//     "FULL NAME": "Faria Jannat Fatema"
+//   },
+//   {
+//     "ID": "250725",
+//     "BATCH": "J31",
+//     "FULL NAME": "Sushil Pandey"
+//   },
+//   {
+//     "ID": "250726",
+//     "BATCH": "J31",
+//     "FULL NAME": "NUSRAT HAQUE SANIA"
+//   },
+//   {
+//     "ID": "250727",
+//     "BATCH": "J31",
+//     "FULL NAME": "Samyak Raul"
+//   },
+//   {
+//     "ID": "250728",
+//     "BATCH": "J31",
+//     "FULL NAME": "Sakib al Hasan"
+//   },
+//   {
+//     "ID": "250729",
+//     "BATCH": "J31",
+//     "FULL NAME": "Md. Arifur Rahman Bhuiyan"
+//   },
+//   {
+//     "ID": "250730",
+//     "BATCH": "J31",
+//     "FULL NAME": "NUR E JANNAT"
+//   },
+//   {
+//     "ID": "250731",
+//     "BATCH": "J31",
+//     "FULL NAME": "Palok Howlader"
+//   },
+//   {
+//     "ID": "250732",
+//     "BATCH": "J31",
+//     "FULL NAME": "Kazi Hasanat Islam "
+//   },
+//   {
+//     "ID": "250733",
+//     "BATCH": "J31",
+//     "FULL NAME": "Al Shakib Hossen Emon "
+//   },
+//   {
+//     "ID": "250734",
+//     "BATCH": "J31",
+//     "FULL NAME": "DEBASMITA SHARMA"
+//   },
+//   {
+//     "ID": "250735",
+//     "BATCH": "J31",
+//     "FULL NAME": "Fatema Tuz Zohra"
+//   },
+//   {
+//     "ID": "250736",
+//     "BATCH": "J31",
+//     "FULL NAME": "Wasif Zaman"
+//   },
+//   {
+//     "ID": "250737",
+//     "BATCH": "J31",
+//     "FULL NAME": "MD.DINAR HOSSAIN"
+//   },
+//   {
+//     "ID": "250738",
+//     "BATCH": "J31",
+//     "FULL NAME": "MD. Hasibul Islam Rupu"
+//   },
+//   {
+//     "ID": "250739",
+//     "BATCH": "J31",
+//     "FULL NAME": "KHADIZA AKTER"
+//   },
+//   {
+//     "ID": "250740",
+//     "BATCH": "J31",
+//     "FULL NAME": "Sheikh Muneeb Ahmad "
+//   },
+//   {
+//     "ID": "250741",
+//     "BATCH": "J31",
+//     "FULL NAME": "Jeba Fariha"
+//   },
+//   {
+//     "ID": "250742",
+//     "BATCH": "J31",
+//     "FULL NAME": "Tanweer Sodial"
+//   },
+//   {
+//     "ID": "250743",
+//     "BATCH": "J31",
+//     "FULL NAME": "Taspia Rahman shopta"
+//   },
+//   {
+//     "ID": "250744",
+//     "BATCH": "J31",
+//     "FULL NAME": "Emdadul Haque Apurba"
+//   },
+//   {
+//     "ID": "250745",
+//     "BATCH": "J31",
+//     "FULL NAME": "NUSRAT ARA"
+//   },
+//   {
+//     "ID": "250746",
+//     "BATCH": "J31",
+//     "FULL NAME": "Mohid Ellahi"
+//   },
+//   {
+//     "ID": "250747",
+//     "BATCH": "J31",
+//     "FULL NAME": "Syeda Nilima"
+//   },
+//   {
+//     "ID": "250748",
+//     "BATCH": "J31",
+//     "FULL NAME": "Keyanur Jannath Rakhi"
+//   },
+//   {
+//     "ID": "250749",
+//     "BATCH": "J31",
+//     "FULL NAME": "Md. Jobayer Hossain"
+//   },
+//   {
+//     "ID": "250750",
+//     "BATCH": "J31",
+//     "FULL NAME": "SUMAIYA OBAID ANISHA"
+//   },
+//   {
+//     "ID": "250751",
+//     "BATCH": "J31",
+//     "FULL NAME": "Sheikh Shawkot Zaman "
+//   },
+//   {
+//     "ID": "250752",
+//     "BATCH": "J31",
+//     "FULL NAME": "Farjana Islam Anika"
+//   },
+//   {
+//     "ID": "250753",
+//     "BATCH": "J31",
+//     "FULL NAME": "Labiba Khan "
+//   },
+//   {
+//     "ID": "250754",
+//     "BATCH": "J31",
+//     "FULL NAME": "Maleeha khan"
+//   },
+//   {
+//     "ID": "250755",
+//     "BATCH": "J31",
+//     "FULL NAME": "Hasibur Rahman"
+//   },
+//   {
+//     "ID": "250756",
+//     "BATCH": "J31",
+//     "FULL NAME": "Md. Sakib Arefin"
+//   },
+//   {
+//     "ID": "250757",
+//     "BATCH": "J31",
+//     "FULL NAME": "TASNIM ISLAM SWARNA"
+//   },
+//   {
+//     "ID": "250758",
+//     "BATCH": "J31",
+//     "FULL NAME": "Labiba Sameen "
+//   },
+//   {
+//     "ID": "250759",
+//     "BATCH": "J31",
+//     "FULL NAME": "Sadia zaman Dina"
+//   },
+//   {
+//     "ID": "250760",
+//     "BATCH": "J31",
+//     "FULL NAME": "Toiba Gowhar"
+//   },
+//   {
+//     "ID": "250761",
+//     "BATCH": "J31",
+//     "FULL NAME": "Sunidhi Shakti Chand "
+//   },
+//   {
+//     "ID": "250762",
+//     "BATCH": "J31",
+//     "FULL NAME": "Atiqur Rahman"
+//   },
+//   {
+//     "ID": "250763",
+//     "BATCH": "J31",
+//     "FULL NAME": "RANA JAHANGIR"
+//   },
+//   {
+//     "ID": "250764",
+//     "BATCH": "J31",
+//     "FULL NAME": "MOHAMMAD ZAID"
+//   },
+//   {
+//     "ID": "250765",
+//     "BATCH": "J31",
+//     "FULL NAME": "Reshma Parveen"
+//   },
+//   {
+//     "ID": "250766",
+//     "BATCH": "J31",
+//     "FULL NAME": "Arbeena Khurshid "
+//   },
+//   {
+//     "ID": "250767",
+//     "BATCH": "J31",
+//     "FULL NAME": "Maisa Meherin"
+//   },
+//   {
+//     "ID": "250768",
+//     "BATCH": "J31",
+//     "FULL NAME": "SANYA GUPTA"
+//   },
+//   {
+//     "ID": "250769",
+//     "BATCH": "J31",
+//     "FULL NAME": "Monika Bhattarai "
+//   },
+//   {
+//     "ID": "250770",
+//     "BATCH": "J31",
+//     "FULL NAME": "Tasfin Ibne Farid"
+//   },
+//   {
+//     "ID": "250771",
+//     "BATCH": "J31",
+//     "FULL NAME": "Farhana Sadmin Rashid "
+//   },
+//   {
+//     "ID": "250772",
+//     "BATCH": "J31",
+//     "FULL NAME": "Jannatin Hossain Vabna"
+//   },
+//   {
+//     "ID": "250773",
+//     "BATCH": "J31",
+//     "FULL NAME": "Riya Thapa"
+//   },
+//   {
+//     "ID": "250774",
+//     "BATCH": "J31",
+//     "FULL NAME": "HIMANSHU SWAMI"
+//   },
+//   {
+//     "ID": "250775",
+//     "BATCH": "J31",
+//     "FULL NAME": "Naisha Ayub "
+//   },
+//   {
+//     "ID": "250776",
+//     "BATCH": "J31",
+//     "FULL NAME": "Omar Ashfaq Madar"
+//   },
+//   {
+//     "ID": "250777",
+//     "BATCH": "J31",
+//     "FULL NAME": "Sidratul Muntaha Jinnat"
+//   },
+//   {
+//     "ID": "250778",
+//     "BATCH": "J31",
+//     "FULL NAME": "Tahmidul Hossen Osar"
+//   },
+//   {
+//     "ID": "250779",
+//     "BATCH": "J31",
+//     "FULL NAME": "Heeba"
+//   },
+//   {
+//     "ID": "250780",
+//     "BATCH": "J31",
+//     "FULL NAME": "Wajeeha Bilal "
+//   },
+//   {
+//     "ID": "250781",
+//     "BATCH": "J31",
+//     "FULL NAME": "Tripti Sedai"
+//   },
+//   {
+//     "ID": "250782",
+//     "BATCH": "J31",
+//     "FULL NAME": "MD.Ariful Islam"
+//   },
+//   {
+//     "ID": "250783",
+//     "BATCH": "J31",
+//     "FULL NAME": "Sadia Mahanur Toma"
+//   },
+//   {
+//     "ID": "250784",
+//     "BATCH": "J31",
+//     "FULL NAME": "Md. Imran Hossain"
+//   },
+//   {
+//     "ID": "250785",
+//     "BATCH": "J31",
+//     "FULL NAME": "Khalid Mahmud "
+//   },
+//   {
+//     "ID": "250786",
+//     "BATCH": "J31",
+//     "FULL NAME": "Anam Mustaqeem"
+//   },
+//   {
+//     "ID": "250787",
+//     "BATCH": "J31",
+//     "FULL NAME": "Anusha Syed Mir "
+//   },
+//   {
+//     "ID": "250788",
+//     "BATCH": "J31",
+//     "FULL NAME": "Israt Jahan sadia"
+//   },
+//   {
+//     "ID": "250789",
+//     "BATCH": "J31",
+//     "FULL NAME": "Iftekhar Mahmod Samir"
+//   },
+//   {
+//     "ID": "250790",
+//     "BATCH": "J31",
+//     "FULL NAME": "Yasmin Sheikh"
+//   },
+//   {
+//     "ID": "250791",
+//     "BATCH": "J31",
+//     "FULL NAME": "Nishaat Shahid"
+//   },
+//   {
+//     "ID": "250792",
+//     "BATCH": "J31",
+//     "FULL NAME": "AFFAN SHAFI BHAT"
+//   },
+//   {
+//     "ID": "250793",
+//     "BATCH": "J31",
+//     "FULL NAME": "Abeez Arshad Sufi"
+//   },
+//   {
+//     "ID": "250794",
+//     "BATCH": "J31",
+//     "FULL NAME": "Md.Jisan khan"
+//   },
+//   {
+//     "ID": "250795",
+//     "BATCH": "J31",
+//     "FULL NAME": "Talha Mushtaq Ahmed "
+//   },
+//   {
+//     "ID": "250796",
+//     "BATCH": "J31",
+//     "FULL NAME": "Mahmud kabir Joy"
+//   },
+//   {
+//     "ID": "250797",
+//     "BATCH": "J31",
+//     "FULL NAME": "MINHAZUL ISLAM "
+//   },
+//   {
+//     "ID": "250798",
+//     "BATCH": "J31",
+//     "FULL NAME": "Faraz Ahmad"
+//   },
+//   {
+//     "ID": "250799",
+//     "BATCH": "J32",
+//     "FULL NAME": "Sana Ayoob"
+//   },
+//   {
+//     "ID": "250800",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md.Abdul Hannan Mujumder"
+//   },
+//   {
+//     "ID": "250801",
+//     "BATCH": "J32",
+//     "FULL NAME": "Zainab Rashid"
+//   },
+//   {
+//     "ID": "250802",
+//     "BATCH": "J32",
+//     "FULL NAME": "Atharva sadanand salvi"
+//   },
+//   {
+//     "ID": "250803",
+//     "BATCH": "J32",
+//     "FULL NAME": "Majumder Bisnupada Abir"
+//   },
+//   {
+//     "ID": "250804",
+//     "BATCH": "J32",
+//     "FULL NAME": "Protikkha Ghatak"
+//   },
+//   {
+//     "ID": "250805",
+//     "BATCH": "J32",
+//     "FULL NAME": "Hridayjyoti kalita"
+//   },
+//   {
+//     "ID": "250806",
+//     "BATCH": "J32",
+//     "FULL NAME": "Muteb Mubarak"
+//   },
+//   {
+//     "ID": "250807",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md.Atik Hasan"
+//   },
+//   {
+//     "ID": "250808",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mohammad Mukarram "
+//   },
+//   {
+//     "ID": "250809",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md. Abu asif"
+//   },
+//   {
+//     "ID": "250810",
+//     "BATCH": "J32",
+//     "FULL NAME": "Danish Majeed Das"
+//   },
+//   {
+//     "ID": "250811",
+//     "BATCH": "J32",
+//     "FULL NAME": "Lav kumar gupta"
+//   },
+//   {
+//     "ID": "250812",
+//     "BATCH": "J32",
+//     "FULL NAME": "Nabhan Mustafa"
+//   },
+//   {
+//     "ID": "250813",
+//     "BATCH": "J32",
+//     "FULL NAME": "Kasam kunwar"
+//   },
+//   {
+//     "ID": "250814",
+//     "BATCH": "J32",
+//     "FULL NAME": "Furqan Ahmad Zargar"
+//   },
+//   {
+//     "ID": "250815",
+//     "BATCH": "J32",
+//     "FULL NAME": "Afraid Md. Isfar"
+//   },
+//   {
+//     "ID": "250816",
+//     "BATCH": "J32",
+//     "FULL NAME": "Sakshyam bajracharya"
+//   },
+//   {
+//     "ID": "250817",
+//     "BATCH": "J32",
+//     "FULL NAME": "Shah Muazum"
+//   },
+//   {
+//     "ID": "250818",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md. Sohan Mia"
+//   },
+//   {
+//     "ID": "250819",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md. Asifuzzaman sajal"
+//   },
+//   {
+//     "ID": "250820",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mubashir Khan"
+//   },
+//   {
+//     "ID": "250821",
+//     "BATCH": "J32",
+//     "FULL NAME": "Abhijeet Das"
+//   },
+//   {
+//     "ID": "250822",
+//     "BATCH": "J32",
+//     "FULL NAME": "Arif"
+//   },
+//   {
+//     "ID": "250823",
+//     "BATCH": "J32",
+//     "FULL NAME": "Morshadul Hossain scion"
+//   },
+//   {
+//     "ID": "250824",
+//     "BATCH": "J32",
+//     "FULL NAME": "Rafsun mahmud shanto"
+//   },
+//   {
+//     "ID": "250825",
+//     "BATCH": "J32",
+//     "FULL NAME": "Irfan Rah"
+//   },
+//   {
+//     "ID": "250826",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mahwish Zafar"
+//   },
+//   {
+//     "ID": "250827",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md. Byejed bustami"
+//   },
+//   {
+//     "ID": "250828",
+//     "BATCH": "J32",
+//     "FULL NAME": "Tahmid Hassan Aditya"
+//   },
+//   {
+//     "ID": "250829",
+//     "BATCH": "J32",
+//     "FULL NAME": "Hasina Sultana"
+//   },
+//   {
+//     "ID": "250830",
+//     "BATCH": "J32",
+//     "FULL NAME": "Swarup Roy"
+//   },
+//   {
+//     "ID": "250831",
+//     "BATCH": "J32",
+//     "FULL NAME": "Kamrozzaman"
+//   },
+//   {
+//     "ID": "250832",
+//     "BATCH": "J32",
+//     "FULL NAME": "Navalika Ngangom"
+//   },
+//   {
+//     "ID": "250833",
+//     "BATCH": "J32",
+//     "FULL NAME": "Almas Anjum"
+//   },
+//   {
+//     "ID": "250834",
+//     "BATCH": "J32",
+//     "FULL NAME": "Akib kaisar"
+//   },
+//   {
+//     "ID": "250835",
+//     "BATCH": "J32",
+//     "FULL NAME": "Sabiha Parween"
+//   },
+//   {
+//     "ID": "250836",
+//     "BATCH": "J32",
+//     "FULL NAME": "Swagata Chakrabarty"
+//   },
+//   {
+//     "ID": "250837",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md.Rafsanul Islam Remon"
+//   },
+//   {
+//     "ID": "250838",
+//     "BATCH": "J32",
+//     "FULL NAME": "Pratikshya Budha Chhetri"
+//   },
+//   {
+//     "ID": "250839",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mayisha tilotama talukder"
+//   },
+//   {
+//     "ID": "250840",
+//     "BATCH": "J32",
+//     "FULL NAME": "Menaka Dhungena"
+//   },
+//   {
+//     "ID": "250841",
+//     "BATCH": "J32",
+//     "FULL NAME": "Rizawana Niggar Ahmed"
+//   },
+//   {
+//     "ID": "250842",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mantasha khan"
+//   },
+//   {
+//     "ID": "250843",
+//     "BATCH": "J32",
+//     "FULL NAME": "Oinam Catherien"
+//   },
+//   {
+//     "ID": "250844",
+//     "BATCH": "J32",
+//     "FULL NAME": "Nabasmita dey"
+//   },
+//   {
+//     "ID": "250845",
+//     "BATCH": "J32",
+//     "FULL NAME": "Kaniz Arifa"
+//   },
+//   {
+//     "ID": "250846",
+//     "BATCH": "J32",
+//     "FULL NAME": "Rakibul Islam"
+//   },
+//   {
+//     "ID": "250847",
+//     "BATCH": "J32",
+//     "FULL NAME": "Taiba"
+//   },
+//   {
+//     "ID": "250848",
+//     "BATCH": "J32",
+//     "FULL NAME": "Dipayaan Nath"
+//   },
+//   {
+//     "ID": "250849",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mst Shaila Begum"
+//   },
+//   {
+//     "ID": "250850",
+//     "BATCH": "J32",
+//     "FULL NAME": "Nusrat nouarin"
+//   },
+//   {
+//     "ID": "250851",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mayabe Jhilik Borna"
+//   },
+//   {
+//     "ID": "250852",
+//     "BATCH": "J32",
+//     "FULL NAME": "Abrar Faiaj"
+//   },
+//   {
+//     "ID": "250853",
+//     "BATCH": "J32",
+//     "FULL NAME": "Jidan Debbarma"
+//   },
+//   {
+//     "ID": "250854",
+//     "BATCH": "J32",
+//     "FULL NAME": "Farjana akter"
+//   },
+//   {
+//     "ID": "250855",
+//     "BATCH": "J32",
+//     "FULL NAME": "Israt jahan hemu"
+//   },
+//   {
+//     "ID": "250856",
+//     "BATCH": "J32",
+//     "FULL NAME": "Abu Muhammad Sufian"
+//   },
+//   {
+//     "ID": "250857",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mubina Ahmed "
+//   },
+//   {
+//     "ID": "250858",
+//     "BATCH": "J32",
+//     "FULL NAME": "Hafsa rashid jim"
+//   },
+//   {
+//     "ID": "250859",
+//     "BATCH": "J32",
+//     "FULL NAME": "Nasrullah Zunayed Mashoar"
+//   },
+//   {
+//     "ID": "250860",
+//     "BATCH": "J32",
+//     "FULL NAME": "Anurag Pal"
+//   },
+//   {
+//     "ID": "250861",
+//     "BATCH": "J32",
+//     "FULL NAME": "Shaia sharfi"
+//   },
+//   {
+//     "ID": "250862",
+//     "BATCH": "J32",
+//     "FULL NAME": "Alina Fatima "
+//   },
+//   {
+//     "ID": "250863",
+//     "BATCH": "J32",
+//     "FULL NAME": "Harshit Thakur"
+//   },
+//   {
+//     "ID": "250864",
+//     "BATCH": "J32",
+//     "FULL NAME": "Naima akhter nishat"
+//   },
+//   {
+//     "ID": "250865",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md. Abeer Hasan"
+//   },
+//   {
+//     "ID": "250866",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mustafa Md. Shakil Hasan"
+//   },
+//   {
+//     "ID": "250867",
+//     "BATCH": "J32",
+//     "FULL NAME": "Maitry Dutta"
+//   },
+//   {
+//     "ID": "250868",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md Alif Gazi"
+//   },
+//   {
+//     "ID": "250869",
+//     "BATCH": "J32",
+//     "FULL NAME": "Shible Noman"
+//   },
+//   {
+//     "ID": "250870",
+//     "BATCH": "J32",
+//     "FULL NAME": "Debosmita Bhowmik"
+//   },
+//   {
+//     "ID": "250871",
+//     "BATCH": "J32",
+//     "FULL NAME": "Rifah Tasnia Sanja"
+//   },
+//   {
+//     "ID": "250872",
+//     "BATCH": "J32",
+//     "FULL NAME": "Altamash Rana "
+//   },
+//   {
+//     "ID": "250873",
+//     "BATCH": "J32",
+//     "FULL NAME": "Sanjana Tarrannum"
+//   },
+//   {
+//     "ID": "250874",
+//     "BATCH": "J32",
+//     "FULL NAME": "Jannatul Ferdoush"
+//   },
+//   {
+//     "ID": "250875",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md. Rehan"
+//   },
+//   {
+//     "ID": "250876",
+//     "BATCH": "J32",
+//     "FULL NAME": "Kushal Adhikary"
+//   },
+//   {
+//     "ID": "250877",
+//     "BATCH": "J32",
+//     "FULL NAME": "Sadia Kabir khan "
+//   },
+//   {
+//     "ID": "250878",
+//     "BATCH": "J32",
+//     "FULL NAME": "Farhan  raian"
+//   },
+//   {
+//     "ID": "250879",
+//     "BATCH": "J32",
+//     "FULL NAME": "Md. Abu Sayam"
+//   },
+//   {
+//     "ID": "250880",
+//     "BATCH": "J32",
+//     "FULL NAME": "Fabiha Jahid Naushin"
+//   },
+//   {
+//     "ID": "250881",
+//     "BATCH": "J32",
+//     "FULL NAME": "Aysha Akther Sonia"
+//   },
+//   {
+//     "ID": "250882",
+//     "BATCH": "J32",
+//     "FULL NAME": "Zinia Akter"
+//   },
+//   {
+//     "ID": "250883",
+//     "BATCH": "J32",
+//     "FULL NAME": "Hoorain Iqbal"
+//   },
+//   {
+//     "ID": "250884",
+//     "BATCH": "J32",
+//     "FULL NAME": "Shah Sadia"
+//   },
+//   {
+//     "ID": "250885",
+//     "BATCH": "J32",
+//     "FULL NAME": "Zakia"
+//   },
+//   {
+//     "ID": "250886",
+//     "BATCH": "J32",
+//     "FULL NAME": "Sanjida Akter"
+//   },
+//   {
+//     "ID": "250887",
+//     "BATCH": "J32",
+//     "FULL NAME": "Ema Aktar"
+//   },
+//   {
+//     "ID": "250888",
+//     "BATCH": "J32",
+//     "FULL NAME": "Mantasha"
+//   },
+//   {
+//     "ID": "250889",
+//     "BATCH": "J33",
+//     "FULL NAME": "Badhon"
+//   },
+//   {
+//     "ID": "250890",
+//     "BATCH": "J33",
+//     "FULL NAME": "Barnil moni swargo"
+//   },
+//   {
+//     "ID": "250891",
+//     "BATCH": "J33",
+//     "FULL NAME": "Rehman Shadbir Shadab"
+//   },
+//   {
+//     "ID": "250892",
+//     "BATCH": "J33",
+//     "FULL NAME": "Adiba Rahman"
+//   },
+//   {
+//     "ID": "250893",
+//     "BATCH": "J33",
+//     "FULL NAME": "Ashraful mirsaim sizan"
+//   },
+//   {
+//     "ID": "250894",
+//     "BATCH": "J33",
+//     "FULL NAME": "Tausif Ahmad"
+//   },
+//   {
+//     "ID": "250895",
+//     "BATCH": "J33",
+//     "FULL NAME": "Fahim hossain"
+//   },
+//   {
+//     "ID": "250896",
+//     "BATCH": "J33",
+//     "FULL NAME": "Lobaba Rahman"
+//   },
+//   {
+//     "ID": "250897",
+//     "BATCH": "J33",
+//     "FULL NAME": "Alfie Shahriar Islam"
+//   },
+//   {
+//     "ID": "250898",
+//     "BATCH": "J33",
+//     "FULL NAME": "Rynan Salim Ovik"
+//   },
+//   {
+//     "ID": "250899",
+//     "BATCH": "J33",
+//     "FULL NAME": "Alamin"
+//   },
+//   {
+//     "ID": "250900",
+//     "BATCH": "J33",
+//     "FULL NAME": "Farjana akter shikha"
+//   },
+//   {
+//     "ID": "250901",
+//     "BATCH": "J33",
+//     "FULL NAME": "Deepraj das"
+//   },
+//   {
+//     "ID": "250902",
+//     "BATCH": "J33",
+//     "FULL NAME": "Javed Akhter"
+//   },
+//   {
+//     "ID": "250903",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sadiqul islam"
+//   },
+//   {
+//     "ID": "250904",
+//     "BATCH": "J33",
+//     "FULL NAME": "Shakil oftikhat hasan"
+//   },
+//   {
+//     "ID": "250905",
+//     "BATCH": "J33",
+//     "FULL NAME": "Fahim Rafat"
+//   },
+//   {
+//     "ID": "250906",
+//     "BATCH": "J33",
+//     "FULL NAME": "Istiyak ahmed abin"
+//   },
+//   {
+//     "ID": "250907",
+//     "BATCH": "J33",
+//     "FULL NAME": "Hafsa Akter Rafa"
+//   },
+//   {
+//     "ID": "250908",
+//     "BATCH": "J33",
+//     "FULL NAME": "Irshadul Islam Ayon"
+//   },
+//   {
+//     "ID": "250909",
+//     "BATCH": "J33",
+//     "FULL NAME": "Diya Rani Saha"
+//   },
+//   {
+//     "ID": "250910",
+//     "BATCH": "J33",
+//     "FULL NAME": "Ashfaq Ali Ansari"
+//   },
+//   {
+//     "ID": "250911",
+//     "BATCH": "J33",
+//     "FULL NAME": "Md Afjalul Amin"
+//   },
+//   {
+//     "ID": "250912",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sayed Anisur Rahman "
+//   },
+//   {
+//     "ID": "250913",
+//     "BATCH": "J33",
+//     "FULL NAME": "Bien Yadav"
+//   },
+//   {
+//     "ID": "250914",
+//     "BATCH": "J33",
+//     "FULL NAME": "Anshe Azam"
+//   },
+//   {
+//     "ID": "250915",
+//     "BATCH": "J33",
+//     "FULL NAME": "Pawan thakur"
+//   },
+//   {
+//     "ID": "250916",
+//     "BATCH": "J33",
+//     "FULL NAME": "Gourob Barman"
+//   },
+//   {
+//     "ID": "250917",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sushil palci"
+//   },
+//   {
+//     "ID": "250918",
+//     "BATCH": "J33",
+//     "FULL NAME": "Md mumtaj rayeen"
+//   },
+//   {
+//     "ID": "250919",
+//     "BATCH": "J33",
+//     "FULL NAME": "Abdulla Al siam"
+//   },
+//   {
+//     "ID": "250920",
+//     "BATCH": "J33",
+//     "FULL NAME": "Abhishek yadav"
+//   },
+//   {
+//     "ID": "250921",
+//     "BATCH": "J33",
+//     "FULL NAME": "Aditya paul"
+//   },
+//   {
+//     "ID": "250922",
+//     "BATCH": "J33",
+//     "FULL NAME": "Amartya kanta adhikari"
+//   },
+//   {
+//     "ID": "250923",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sanjida Bintary Abdul Halim"
+//   },
+//   {
+//     "ID": "250924",
+//     "BATCH": "J33",
+//     "FULL NAME": "Ayushman singh basnet"
+//   },
+//   {
+//     "ID": "250925",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sadia Papri Mou"
+//   },
+//   {
+//     "ID": "250926",
+//     "BATCH": "J33",
+//     "FULL NAME": "S m najmul hasan"
+//   },
+//   {
+//     "ID": "250927",
+//     "BATCH": "J33",
+//     "FULL NAME": "Aastha pandey"
+//   },
+//   {
+//     "ID": "250928",
+//     "BATCH": "J33",
+//     "FULL NAME": "Md tanvir sharkar"
+//   },
+//   {
+//     "ID": "250929",
+//     "BATCH": "J33",
+//     "FULL NAME": "Nirdosh karki"
+//   },
+//   {
+//     "ID": "250930",
+//     "BATCH": "J33",
+//     "FULL NAME": "Shruti basnet"
+//   },
+//   {
+//     "ID": "250931",
+//     "BATCH": "J33",
+//     "FULL NAME": "Asif Ibne kafil"
+//   },
+//   {
+//     "ID": "250932",
+//     "BATCH": "J33",
+//     "FULL NAME": "Jarin tasnim"
+//   },
+//   {
+//     "ID": "250933",
+//     "BATCH": "J33",
+//     "FULL NAME": "Keitan dhital"
+//   },
+//   {
+//     "ID": "250934",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sabanm khatun"
+//   },
+//   {
+//     "ID": "250935",
+//     "BATCH": "J33",
+//     "FULL NAME": "Kishor thapa"
+//   },
+//   {
+//     "ID": "250936",
+//     "BATCH": "J33",
+//     "FULL NAME": "Tannat fatema safa"
+//   },
+//   {
+//     "ID": "250937",
+//     "BATCH": "J33",
+//     "FULL NAME": "Protity Islam"
+//   },
+//   {
+//     "ID": "250938",
+//     "BATCH": "J33",
+//     "FULL NAME": "Aakash Yadav "
+//   },
+//   {
+//     "ID": "250939",
+//     "BATCH": "J33",
+//     "FULL NAME": "Aasutosh kumar mahato"
+//   },
+//   {
+//     "ID": "250940",
+//     "BATCH": "J33",
+//     "FULL NAME": "Shabriha arowa troye"
+//   },
+//   {
+//     "ID": "250941",
+//     "BATCH": "J33",
+//     "FULL NAME": "Zannatul Ferdous Sameha"
+//   },
+//   {
+//     "ID": "250942",
+//     "BATCH": "J33",
+//     "FULL NAME": "Yuman un nisa"
+//   },
+//   {
+//     "ID": "250943",
+//     "BATCH": "J33",
+//     "FULL NAME": "Ifty Jahan Jimu"
+//   },
+//   {
+//     "ID": "250944",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sushamko aacharya"
+//   },
+//   {
+//     "ID": "250945",
+//     "BATCH": "J33",
+//     "FULL NAME": "Mantasha Islam Hall"
+//   },
+//   {
+//     "ID": "250946",
+//     "BATCH": "J33",
+//     "FULL NAME": "Yubraj prasad singh"
+//   },
+//   {
+//     "ID": "250947",
+//     "BATCH": "J33",
+//     "FULL NAME": "Mazunam saleem "
+//   },
+//   {
+//     "ID": "250948",
+//     "BATCH": "J33",
+//     "FULL NAME": "Roudosy Afrin"
+//   },
+//   {
+//     "ID": "250949",
+//     "BATCH": "J33",
+//     "FULL NAME": "Atoofa aftab"
+//   },
+//   {
+//     "ID": "250950",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sagnik mahapatra"
+//   },
+//   {
+//     "ID": "250951",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sanjida Nayan Orna"
+//   },
+//   {
+//     "ID": "250952",
+//     "BATCH": "J33",
+//     "FULL NAME": "Jharna pun"
+//   },
+//   {
+//     "ID": "250953",
+//     "BATCH": "J33",
+//     "FULL NAME": "Raisa Tabassum Hia"
+//   },
+//   {
+//     "ID": "250954",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sneha adnikani "
+//   },
+//   {
+//     "ID": "250955",
+//     "BATCH": "J33",
+//     "FULL NAME": "Soumyadeep chakraborty"
+//   },
+//   {
+//     "ID": "250956",
+//     "BATCH": "J33",
+//     "FULL NAME": "Hanaaz Qadri"
+//   },
+//   {
+//     "ID": "250957",
+//     "BATCH": "J33",
+//     "FULL NAME": "Anika rahman"
+//   },
+//   {
+//     "ID": "250958",
+//     "BATCH": "J33",
+//     "FULL NAME": "Nabila mariom"
+//   },
+//   {
+//     "ID": "250959",
+//     "BATCH": "J33",
+//     "FULL NAME": "Stuti gyawali"
+//   },
+//   {
+//     "ID": "250960",
+//     "BATCH": "J33",
+//     "FULL NAME": "Tasnim aman ananna"
+//   },
+//   {
+//     "ID": "250961",
+//     "BATCH": "J33",
+//     "FULL NAME": "Amina Bushra"
+//   },
+//   {
+//     "ID": "250962",
+//     "BATCH": "J33",
+//     "FULL NAME": "Masfi chowa"
+//   },
+//   {
+//     "ID": "250963",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sohely akter"
+//   },
+//   {
+//     "ID": "250964",
+//     "BATCH": "J33",
+//     "FULL NAME": "Sudishan karki"
+//   },
+//   {
+//     "ID": "250965",
+//     "BATCH": "J33",
+//     "FULL NAME": "Taniya akter"
+//   },
+//   {
+//     "ID": "250966",
+//     "BATCH": "J33",
+//     "FULL NAME": "Rubiya thasin"
+//   },
+//   {
+//     "ID": "250967",
+//     "BATCH": "J33",
+//     "FULL NAME": "Israt jahan"
+//   },
+//   {
+//     "ID": "250968",
+//     "BATCH": "J33",
+//     "FULL NAME": "Mst. Pusphita"
+//   },
+//   {
+//     "ID": "250969",
+//     "BATCH": "J33",
+//     "FULL NAME": "Samiha sanjida esha"
+//   },
+//   {
+//     "ID": "250970",
+//     "BATCH": "J33",
+//     "FULL NAME": "Rujaina jannat liana"
+//   },
+//   {
+//     "ID": "250971",
+//     "BATCH": "J33",
+//     "FULL NAME": "Fahmida islam"
+//   },
+//   {
+//     "ID": "250972",
+//     "BATCH": "J33",
+//     "FULL NAME": "Roshani kumari sah"
+//   },
+//   {
+//     "ID": "250973",
+//     "BATCH": "J33",
+//     "FULL NAME": "Aayusha limbu"
+//   },
+//   {
+//     "ID": "250974",
+//     "BATCH": "J33",
+//     "FULL NAME": "Jenisha bam thakuri"
+//   },
+//   {
+//     "ID": "250975",
+//     "BATCH": "J33",
+//     "FULL NAME": "Shikshya napit"
+//   },
+//   {
+//     "ID": "250976",
+//     "BATCH": "J33",
+//     "FULL NAME": "Pallavi rai"
+//   },
+//   {
+//     "ID": "250977",
+//     "BATCH": "J33",
+//     "FULL NAME": "Darshana adhikary"
+//   },
+//   {
+//     "ID": "250978",
+//     "BATCH": "J33",
+//     "FULL NAME": "Mehebooba begom"
+//   },
+//   {
+//     "ID": "250979",
+//     "BATCH": "J33",
+//     "FULL NAME": "P.malar"
+//   },
+//   {
+//     "ID": "250980",
+//     "BATCH": "J33",
+//     "FULL NAME": "Tanwin jahan"
+//   },
+//   {
+//     "ID": "250981",
+//     "BATCH": "J34",
+//     "FULL NAME": "Asif Ansari"
+//   },
+//   {
+//     "ID": "250982",
+//     "BATCH": "J34",
+//     "FULL NAME": "Avinav Chakravarty"
+//   },
+//   {
+//     "ID": "250983",
+//     "BATCH": "J34",
+//     "FULL NAME": "Hrridee Roy"
+//   },
+//   {
+//     "ID": "250984",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tasnim islam Noor"
+//   },
+//   {
+//     "ID": "250985",
+//     "BATCH": "J34",
+//     "FULL NAME": "Onnesha Mehzabin Turna"
+//   },
+//   {
+//     "ID": "250986",
+//     "BATCH": "J34",
+//     "FULL NAME": "Muhammad Rayan Patloo"
+//   },
+//   {
+//     "ID": "250987",
+//     "BATCH": "J34",
+//     "FULL NAME": "Shirin Robi Dash"
+//   },
+//   {
+//     "ID": "250988",
+//     "BATCH": "J34",
+//     "FULL NAME": "Muntaha Kolpo"
+//   },
+//   {
+//     "ID": "250989",
+//     "BATCH": "J34",
+//     "FULL NAME": "Md. Parbon Rahman"
+//   },
+//   {
+//     "ID": "250990",
+//     "BATCH": "J34",
+//     "FULL NAME": "Rufyda Tafannum Rubsa "
+//   },
+//   {
+//     "ID": "250991",
+//     "BATCH": "J34",
+//     "FULL NAME": "Fariha jahan ayshi"
+//   },
+//   {
+//     "ID": "250992",
+//     "BATCH": "J34",
+//     "FULL NAME": "Md. Guljar Hossain "
+//   },
+//   {
+//     "ID": "250993",
+//     "BATCH": "J34",
+//     "FULL NAME": "Binisha Karki"
+//   },
+//   {
+//     "ID": "250994",
+//     "BATCH": "J34",
+//     "FULL NAME": "Md. Imtiajjamal Rigan"
+//   },
+//   {
+//     "ID": "250995",
+//     "BATCH": "J34",
+//     "FULL NAME": "Nur Angis Nova "
+//   },
+//   {
+//     "ID": "250996",
+//     "BATCH": "J34",
+//     "FULL NAME": "Md. Rasif Hasan"
+//   },
+//   {
+//     "ID": "250997",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tasmia Tabassom"
+//   },
+//   {
+//     "ID": "250998",
+//     "BATCH": "J34",
+//     "FULL NAME": "Bushra khanam "
+//   },
+//   {
+//     "ID": "250999",
+//     "BATCH": "J34",
+//     "FULL NAME": "Arya Maharjan"
+//   },
+//   {
+//     "ID": "251000",
+//     "BATCH": "J34",
+//     "FULL NAME": "Sheikh Farhan Ishraq Shafin"
+//   },
+//   {
+//     "ID": "251001",
+//     "BATCH": "J34",
+//     "FULL NAME": "Afiba Sultana Anika"
+//   },
+//   {
+//     "ID": "251002",
+//     "BATCH": "J34",
+//     "FULL NAME": "Durjoy Saha Jit"
+//   },
+//   {
+//     "ID": "251003",
+//     "BATCH": "J34",
+//     "FULL NAME": "Taslima Mim"
+//   },
+//   {
+//     "ID": "251004",
+//     "BATCH": "J34",
+//     "FULL NAME": "Fatima Chonche"
+//   },
+//   {
+//     "ID": "251005",
+//     "BATCH": "J34",
+//     "FULL NAME": "Dalia Khanam"
+//   },
+//   {
+//     "ID": "251006",
+//     "BATCH": "J34",
+//     "FULL NAME": "Anas Ibne Ashraf "
+//   },
+//   {
+//     "ID": "251007",
+//     "BATCH": "J34",
+//     "FULL NAME": "Priomi Das Katha"
+//   },
+//   {
+//     "ID": "251008",
+//     "BATCH": "J34",
+//     "FULL NAME": "Hamd Nur Rahman Tourjo"
+//   },
+//   {
+//     "ID": "251009",
+//     "BATCH": "J34",
+//     "FULL NAME": "Kowshik Sen"
+//   },
+//   {
+//     "ID": "251010",
+//     "BATCH": "J34",
+//     "FULL NAME": "Audri Barua"
+//   },
+//   {
+//     "ID": "251011",
+//     "BATCH": "J34",
+//     "FULL NAME": "Safayet Hossain"
+//   },
+//   {
+//     "ID": "251012",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tanzil Ahmed"
+//   },
+//   {
+//     "ID": "251013",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tasfia Hasan"
+//   },
+//   {
+//     "ID": "251014",
+//     "BATCH": "J34",
+//     "FULL NAME": "Masum Rahmatullah "
+//   },
+//   {
+//     "ID": "251015",
+//     "BATCH": "J34",
+//     "FULL NAME": "Ayush Bhatarai"
+//   },
+//   {
+//     "ID": "251016",
+//     "BATCH": "J34",
+//     "FULL NAME": "Eusha Alam"
+//   },
+//   {
+//     "ID": "251017",
+//     "BATCH": "J34",
+//     "FULL NAME": "Prakriti Regmi"
+//   },
+//   {
+//     "ID": "251018",
+//     "BATCH": "J34",
+//     "FULL NAME": "S.M Rahmatullah "
+//   },
+//   {
+//     "ID": "251019",
+//     "BATCH": "J34",
+//     "FULL NAME": "Nishan Kumar sharma khanal"
+//   },
+//   {
+//     "ID": "251020",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tahfim Ahammed Yean"
+//   },
+//   {
+//     "ID": "251021",
+//     "BATCH": "J34",
+//     "FULL NAME": "Mostufa Kabir"
+//   },
+//   {
+//     "ID": "251022",
+//     "BATCH": "J34",
+//     "FULL NAME": "Prayusha Karki"
+//   },
+//   {
+//     "ID": "251023",
+//     "BATCH": "J34",
+//     "FULL NAME": "Abhishek patel"
+//   },
+//   {
+//     "ID": "251024",
+//     "BATCH": "J34",
+//     "FULL NAME": "Mofaz Shamoel Pabitra"
+//   },
+//   {
+//     "ID": "251025",
+//     "BATCH": "J34",
+//     "FULL NAME": "Rakshak karki"
+//   },
+//   {
+//     "ID": "251026",
+//     "BATCH": "J34",
+//     "FULL NAME": "Fardin Alif"
+//   },
+//   {
+//     "ID": "251027",
+//     "BATCH": "J34",
+//     "FULL NAME": "Md. Riad Hossen"
+//   },
+//   {
+//     "ID": "251028",
+//     "BATCH": "J34",
+//     "FULL NAME": "Ezewetelu mekriush"
+//   },
+//   {
+//     "ID": "251029",
+//     "BATCH": "J34",
+//     "FULL NAME": "Sadaf Hasan Setu"
+//   },
+//   {
+//     "ID": "251030",
+//     "BATCH": "J34",
+//     "FULL NAME": "Imran Ansari"
+//   },
+//   {
+//     "ID": "251031",
+//     "BATCH": "J34",
+//     "FULL NAME": "Mahin Munshi"
+//   },
+//   {
+//     "ID": "251032",
+//     "BATCH": "J34",
+//     "FULL NAME": "Md. Taibur Rahman Tanvir"
+//   },
+//   {
+//     "ID": "251033",
+//     "BATCH": "J34",
+//     "FULL NAME": "Latifur Rahman "
+//   },
+//   {
+//     "ID": "251034",
+//     "BATCH": "J34",
+//     "FULL NAME": "Md Tanvir Islam"
+//   },
+//   {
+//     "ID": "251035",
+//     "BATCH": "J34",
+//     "FULL NAME": "Himani khadka"
+//   },
+//   {
+//     "ID": "251036",
+//     "BATCH": "J34",
+//     "FULL NAME": "Daud Rahman"
+//   },
+//   {
+//     "ID": "251037",
+//     "BATCH": "J34",
+//     "FULL NAME": "Pramisha Joshi"
+//   },
+//   {
+//     "ID": "251038",
+//     "BATCH": "J34",
+//     "FULL NAME": "Mahmudul hasan"
+//   },
+//   {
+//     "ID": "251039",
+//     "BATCH": "J34",
+//     "FULL NAME": "yogyata khadka"
+//   },
+//   {
+//     "ID": "251040",
+//     "BATCH": "J34",
+//     "FULL NAME": "Al Amin Tahsan"
+//   },
+//   {
+//     "ID": "251041",
+//     "BATCH": "J34",
+//     "FULL NAME": "Mahamudul Hossain Seyem"
+//   },
+//   {
+//     "ID": "251042",
+//     "BATCH": "J34",
+//     "FULL NAME": "Jesika kumari sing"
+//   },
+//   {
+//     "ID": "251043",
+//     "BATCH": "J34",
+//     "FULL NAME": "Shah Irfan"
+//   },
+//   {
+//     "ID": "251044",
+//     "BATCH": "J34",
+//     "FULL NAME": "Dipti shanti"
+//   },
+//   {
+//     "ID": "251045",
+//     "BATCH": "J34",
+//     "FULL NAME": "Suprim Devcota"
+//   },
+//   {
+//     "ID": "251046",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tahrima samad jui"
+//   },
+//   {
+//     "ID": "251047",
+//     "BATCH": "J34",
+//     "FULL NAME": "Asmin Anjum Anadil"
+//   },
+//   {
+//     "ID": "251048",
+//     "BATCH": "J34",
+//     "FULL NAME": "Mahim Bhuiya"
+//   },
+//   {
+//     "ID": "251049",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tauhid hossen Akash"
+//   },
+//   {
+//     "ID": "251050",
+//     "BATCH": "J34",
+//     "FULL NAME": "Sacheet K.C"
+//   },
+//   {
+//     "ID": "251051",
+//     "BATCH": "J34",
+//     "FULL NAME": "Shirshak Gautam"
+//   },
+//   {
+//     "ID": "251052",
+//     "BATCH": "J34",
+//     "FULL NAME": "Mohammad saad chonche"
+//   },
+//   {
+//     "ID": "251053",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tenzing Khaidem "
+//   },
+//   {
+//     "ID": "251054",
+//     "BATCH": "J34",
+//     "FULL NAME": "Maaz Naushad"
+//   },
+//   {
+//     "ID": "251055",
+//     "BATCH": "J34",
+//     "FULL NAME": "Md Meraj Ahmed Ansari"
+//   },
+//   {
+//     "ID": "251056",
+//     "BATCH": "J34",
+//     "FULL NAME": "Raisa Binte Karim"
+//   },
+//   {
+//     "ID": "251057",
+//     "BATCH": "J34",
+//     "FULL NAME": "Al Manar Un Nafi "
+//   },
+//   {
+//     "ID": "251058",
+//     "BATCH": "J34",
+//     "FULL NAME": "Chadni"
+//   },
+//   {
+//     "ID": "251059",
+//     "BATCH": "J34",
+//     "FULL NAME": "Sadiya Mahjabin"
+//   },
+//   {
+//     "ID": "251060",
+//     "BATCH": "J34",
+//     "FULL NAME": "Shakiza hoque tushi"
+//   },
+//   {
+//     "ID": "251061",
+//     "BATCH": "J34",
+//     "FULL NAME": "Anika Najnine Usme"
+//   },
+//   {
+//     "ID": "251062",
+//     "BATCH": "J34",
+//     "FULL NAME": "Sabekun Nahar Era "
+//   },
+//   {
+//     "ID": "251063",
+//     "BATCH": "J34",
+//     "FULL NAME": "Snigdha Debnath"
+//   },
+//   {
+//     "ID": "251064",
+//     "BATCH": "J34",
+//     "FULL NAME": "Nishat tasnim himu"
+//   },
+//   {
+//     "ID": "251065",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tanvir Ahmed"
+//   },
+//   {
+//     "ID": "251066",
+//     "BATCH": "J34",
+//     "FULL NAME": "Sanjida jahan Jerin"
+//   },
+//   {
+//     "ID": "251067",
+//     "BATCH": "J34",
+//     "FULL NAME": "Amani akter Jim"
+//   },
+//   {
+//     "ID": "251068",
+//     "BATCH": "J34",
+//     "FULL NAME": "Safayat Ullah Ebad "
+//   },
+//   {
+//     "ID": "251069",
+//     "BATCH": "J34",
+//     "FULL NAME": "Muzain Mushtaq"
+//   },
+//   {
+//     "ID": "251070",
+//     "BATCH": "J34",
+//     "FULL NAME": "Fatema Akter"
+//   },
+//   {
+//     "ID": "251071",
+//     "BATCH": "J34",
+//     "FULL NAME": "Mohammad Ahtisham"
+//   },
+//   {
+//     "ID": "251072",
+//     "BATCH": "J34",
+//     "FULL NAME": "Monika akhter Barsha "
+//   },
+//   {
+//     "ID": "251073",
+//     "BATCH": "J34",
+//     "FULL NAME": "Samira Jahan Fima"
+//   },
+//   {
+//     "ID": "251074",
+//     "BATCH": "J34",
+//     "FULL NAME": "Muhammad uvaish monsuri"
+//   },
+//   {
+//     "ID": "251075",
+//     "BATCH": "J34",
+//     "FULL NAME": "Adeeba Maqsud"
+//   },
+//   {
+//     "ID": "251076",
+//     "BATCH": "J34",
+//     "FULL NAME": "Tahmina Islam"
+//   },
+//   {
+//     "ID": "251077",
+//     "BATCH": "J34",
+//     "FULL NAME": "Sumaiya Rahman"
+//   },
+//   {
+//     "ID": "251078",
+//     "BATCH": "J34",
+//     "FULL NAME": "Radia Haque Ilma"
+//   },
+//   {
+//     "ID": "251079",
+//     "BATCH": "J34",
+//     "FULL NAME": "Afrin Akter"
+//   },
+//   {
+//     "ID": "251080",
+//     "BATCH": "J34",
+//     "FULL NAME": "Naila Rahman "
+//   },
+//   {
+//     "ID": "251081",
+//     "BATCH": "J34",
+//     "FULL NAME": "Sajit Ali"
+//   }
+// ]
