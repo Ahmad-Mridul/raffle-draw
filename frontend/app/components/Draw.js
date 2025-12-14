@@ -82,11 +82,17 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
       {winner && winner.row ? <div className={styles.winnerLabel}>Winner</div> : null}
 
       <div className={`${styles.displayField} ${winner && winner.row ? styles.displayFieldWinner : ''}`} role="status" aria-live="polite">
-        {winner && winner.message
-          ? winner.message
-          : winner && winner.row
-          ? `${winner.row.join(" | ")}`
-          : "No draw yet — press Draw"}
+        {winner && winner.message ? (
+          winner.message
+        ) : winner && winner.row ? (
+          <div style={{display: 'flex', flexDirection: 'column', gap: 6}}>
+            <div>Registration: {winner.row[0] ?? ""}</div>
+            <div>Batch: {winner.row[1] ?? ""}</div>
+            <div>Name: {winner.row[2] ?? ""}</div>
+          </div>
+        ) : (
+          "No draw yet — press Draw"
+        )}
       </div>
 
       <button

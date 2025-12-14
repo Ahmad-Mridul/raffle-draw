@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import styles from "./spreadsheet.module.css";
-
 export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, rows: propsRows, setRows: propsSetRows, selectedRowIndex, isRolling = false }) {
   // Support controlled props (from page) or internal state fallback
   const [internalCols, setInternalCols] = useState([
@@ -25,21 +24,15 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
   useEffect(() => {
     const sel = selectedRowIndex;
     if (typeof sel !== "number" || sel === null || sel === undefined) return;
-    // scroll into view inside table container
     const table = tableRef.current;
     const rowEl = selectedRef.current;
     if (rowEl && table) {
-      // scroll the wrapper so the row is visible
       const wrapper = table;
       const rect = rowEl.getBoundingClientRect();
       const wrapRect = wrapper.getBoundingClientRect();
-      // adjust scrollTop so selected row is centered in wrapper
       const offset = rect.top - wrapRect.top + wrapper.scrollTop - wrapper.clientHeight / 2 + rect.height / 2;
       wrapper.scrollTo({ top: offset, behavior: "smooth" });
-      // remove highlight after animation ends
-      setTimeout(() => {
-        // no-op: CSS animation ends on its own; we don't persist selection here
-      }, 1500);
+      setTimeout(() => {}, 1500);
     }
   }, [selectedRowIndex]);
 
@@ -48,7 +41,7 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
     const fetchParticipants = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch("https://raffle-draw-backend.vercel.app/participants");
+        const res = await fetch("http://localhost:5000/participants");
         if (!res.ok) return;
         const data = await res.json();
         if (!Array.isArray(data) || data.length === 0) return;
@@ -58,19 +51,15 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
           Object.keys(item).forEach((k) => s.add(k));
           return s;
         }, new Set());
-        // exclude MongoDB internal id and internal timestamps from columns
         const keys = Array.from(keySet).filter((k) => !["_id", "movedAt", "restoredAt"].includes(k));
 
-        // Create column definitions
         const apiCols = keys.map((k, i) => ({ id: i + 1, name: k }));
         setCols(apiCols);
 
-        // Map rows to arrays corresponding to keys order
         const apiRows = data.map((item) =>
           keys.map((k) => {
             const v = item[k];
             if (v == null) return "";
-            // handle Mongo ObjectId or other objects
             if (typeof v === "object") {
               if (v.hasOwnProperty("$oid")) return v.$oid;
               return v.toString();
@@ -90,13 +79,9 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
     fetchParticipants();
   }, [setCols, setRows]);
 
-  // addColumn removed per request
-
   const updateColName = (colIdx, newName) => {
     setCols((c) => c.map((col, i) => (i === colIdx ? { ...col, name: newName } : col)));
   };
-
-  // addRow removed per request
 
   const updateCell = (rowIdx, colIdx, value) => {
     setRows((r) => {
@@ -110,7 +95,6 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
   const handleKeyDown = (e, rowIdx, colIdx) => {
     if (e.key === "Enter") {
       e.preventDefault();
-      // Move focus to the same column in the next row if it exists
       setTimeout(() => {
         const table = tableRef.current;
         if (!table) return;
@@ -124,39 +108,29 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
     }
   };
 
-  // Paste handler: if pasted text has multiple lines, insert rows
   const handlePaste = (e, rowIdx, colIdx) => {
     const clipboard = e.clipboardData || window.clipboardData;
     const text = clipboard.getData("text");
     if (!text) return;
-    // parse by lines and tabs
     const lines = text.replace(/\r\n/g, "\n").split(/\n/);
-    if (lines.length <= 1) return; // default behavior
+    if (lines.length <= 1) return;
     e.preventDefault();
 
-    // For each line, split by tabs
     const parsedRows = lines.map((ln) => ln.split(/\t/));
 
     setRows((r) => {
       const copy = r.map((row) => [...row]);
-      // replace current row starting at colIdx with first parsed row
       parsedRows.forEach((prow, i) => {
         const targetRowIdx = rowIdx + i;
-        // if target row doesn't exist, push new rows
         if (targetRowIdx >= copy.length) {
           copy.push(Array(cols.length).fill(""));
         }
-        // ensure row has enough columns
         if (copy[targetRowIdx].length < cols.length) {
-          copy[targetRowIdx] = copy[targetRowIdx].concat(
-            Array(cols.length - copy[targetRowIdx].length).fill("")
-          );
+          copy[targetRowIdx] = copy[targetRowIdx].concat(Array(cols.length - copy[targetRowIdx].length).fill(""));
         }
-        // fill columns starting at colIdx
         for (let j = 0; j < prow.length; j++) {
           const cIdx = colIdx + j;
           if (cIdx >= cols.length) {
-            // add new cols when needed
             const nextId = cols.length + (cIdx - cols.length) + 1;
             setCols((prev) => [...prev, { id: nextId, name: `Col ${nextId}` }]);
           }
@@ -166,7 +140,6 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
       });
       return copy;
     });
-    // after paste, remove any fully-empty rows
     setTimeout(() => trimEmptyRows(), 20);
   };
 
@@ -247,3 +220,5 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
     </div>
   );
 }
+
+

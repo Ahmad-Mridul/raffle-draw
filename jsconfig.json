@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "commonjs",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "checkJs": false,
+    "baseUrl": ".",
+    "paths": {}
+  },
+  "exclude": ["node_modules", "**/*.ts", "**/*.tsx"]
+}

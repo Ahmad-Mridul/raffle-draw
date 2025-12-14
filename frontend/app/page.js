@@ -21,7 +21,7 @@ const page = () => {
   // Load winners from backend
   const fetchWinners = async () => {
     try {
-      const res = await fetch('https://raffle-draw-backend.vercel.app/winners');
+      const res = await fetch('http://localhost:5000/winners');
       if (!res.ok) throw new Error('Failed to load winners');
       const json = await res.json();
 
@@ -41,7 +41,7 @@ const page = () => {
   // Load participants from backend (fallback to bundled data.json)
   const fetchParticipants = async () => {
     try {
-      const res = await fetch('https://raffle-draw-backend.vercel.app/participants');
+      const res = await fetch('http://localhost:5000/participants');
       if (!res.ok) throw new Error('Failed to load participants');
       const json = await res.json();
 
@@ -80,7 +80,7 @@ const page = () => {
   const resetWinners = async () => {
     if (!confirm('Reset all winners back into participants?')) return;
     try {
-      const res = await fetch('https://raffle-draw-backend.vercel.app/winners/reset', { method: 'POST' });
+      const res = await fetch('http://localhost:5000/winners/reset', { method: 'POST' });
       if (!res.ok) throw new Error('Reset failed');
       await fetchWinners();
       await fetchParticipants();
@@ -150,7 +150,7 @@ const page = () => {
                });
 
                try {
-                 const res = await fetch('https://raffle-draw-backend.vercel.app/winners', {
+                 const res = await fetch('http://localhost:5000/winners', {
                    method: 'POST',
                    headers: { 'Content-Type': 'application/json' },
                    body: JSON.stringify(payload),
