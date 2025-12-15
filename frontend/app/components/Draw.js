@@ -5,7 +5,7 @@ import Confetti from "./Confetti";
 import Image from "next/image";
 import styles from "./draw.module.css";
 
-export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRolling }) {
+export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRolling, winnersCount = 0 }) {
   const [winner, setWinner] = useState(null);
   const [confettiActive, setConfettiActive] = useState(false);
   const [buttonActive, setButtonActive] = useState(false);
@@ -96,13 +96,18 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
       </div>
 
       <button
-        className={`${styles.button} ${buttonActive ? styles.buttonActive : ""}`}
+        className={`${styles.button} ${buttonActive ? styles.buttonActive : ""} ${winnersCount >= 20 ? "hidden" : ""}`}
         onClick={draw}
         aria-label="Draw"
-        disabled={animating}
+        disabled={animating }
+        title={winnersCount >= 20 ? 'Maximum 20 winners reached' : undefined}
       >
         Draw
       </button>
+
+      {winnersCount >= 20 ? (
+        <div style={{ marginTop: 8, color: '#b00', fontSize: 13 }} aria-live="polite">Maximum 20 winners reached</div>
+      ) : null}
 
       {confettiActive && <Confetti active={confettiActive} duration={1800} />}
 

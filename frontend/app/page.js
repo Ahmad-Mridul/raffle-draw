@@ -79,13 +79,18 @@ const page = () => {
 
   const resetWinners = async () => {
     if (!confirm('Reset all winners back into participants?')) return;
+    const prev = winners;
+    // Optimistically clear winners UI
+    setWinners([]);
     try {
       const res = await fetch('https://raffle-draw-dl86.onrender.com/winners/reset', { method: 'POST' });
       if (!res.ok) throw new Error('Reset failed');
-      await fetchWinners();
       await fetchParticipants();
+      await fetchWinners();
     } catch (err) {
       console.error('Error resetting winners:', err);
+      // Rollback UI on failure
+      setWinners(prev);
     }
   };
 
@@ -139,6 +144,7 @@ const page = () => {
           rows={rows}
           setSelectedRowIndex={setSelectedRowIndex}
           setIsRolling={setIsRolling}
+          winnersCount={winners.length}
             onWinner={async (rowIndex) => {
                setSelectedRowIndex(rowIndex);
                const winner = rows[rowIndex];
@@ -149,6 +155,16 @@ const page = () => {
                  payload[c.name] = winner[idx];
                });
 
+               // Map payload into the local display format [ID, Batch, Name]
+               const localMapped = [
+                 payload['ID'] || payload['Id'] || payload['id'] || '',
+                 payload['BATCH'] || payload['Batch'] || payload['batch'] || '',
+                 payload['FULL NAME'] || payload['Full Name'] || payload['Full name'] || payload['name'] || payload['NAME'] || '',
+               ];
+
+               // Optimistically show the winner immediately
+               setWinners((prev) => [...prev, localMapped]);
+
                try {
                  const res = await fetch('https://raffle-draw-dl86.onrender.com/winners', {
                    method: 'POST',
@@ -156,16 +172,32 @@ const page = () => {
                    body: JSON.stringify(payload),
                  });
                  if (!res.ok) {
-                   console.error('Failed to persist winner to backend');
-                   return;
+                   throw new Error('Failed to persist winner to backend');
                  }
 
-                 // Success: refresh winners and participants from backend
-                 await fetchWinners();
+                 const json = await res.json();
+
+                 // Replace the optimistic entry with the authoritative server copy (if provided)
+                 if (json && json.winner) {
+                   const idFromServer = json.winner.ID || json.winner.Id || json.winner.id || (json.winner._id ? String(json.winner._id) : '');
+                   const serverMapped = [
+                     idFromServer,
+                     json.winner.BATCH || json.winner.Batch || json.winner.batch || '',
+                     json.winner['FULL NAME'] || json.winner['Full Name'] || json.winner.name || json.winner.NAME || '',
+                   ];
+
+                   setWinners((prev) => prev.map((w) => (w[0] === localMapped[0] ? serverMapped : w)));
+                 }
+
+                 // Refresh participants to remove the winner from the sheet
                  await fetchParticipants();
+                 // Also refresh winners from backend to reconcile any differences
+                 await fetchWinners();
                  setSelectedRowIndex(null);
                } catch (err) {
                  console.error('Error calling winners API', err);
+                 // Roll back optimistic update on failure
+                 setWinners((prev) => prev.filter((w) => w[0] !== localMapped[0]));
                }
             }}
         />
