@@ -45,8 +45,13 @@ export default function WinnersList({ winners = [], onReset }) {
               const originalIndex = winners.length - 1 - idx;
               const rank = 20 - originalIndex;
 
+              let rankClass = '';
+              if (rank === 1) rankClass = styles.rank1;
+              else if (rank === 2) rankClass = styles.rank2;
+              else if (rank === 3) rankClass = styles.rank3;
+
               return (
-                <li key={idx} className={styles.item}>
+                <li key={idx} className={`${styles.item} ${rankClass}`}>
                   <span className={styles.rank}>#{rank}</span>
                   <span className={styles.id}>{winner[0]}</span>
                   <span className={styles.name}>{winner[2]}</span>
@@ -59,3 +64,12 @@ export default function WinnersList({ winners = [], onReset }) {
     </div>
   );
 }
+
+
+
+
+// for the top 3 winners: add more special effects
+
+// number 3: a little more than the others
+// number 2: more than number 3
+// number 1: more than number 2
