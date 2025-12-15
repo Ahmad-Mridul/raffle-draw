@@ -16,7 +16,7 @@ export default function WinnersList({ winners = [], onReset }) {
       if (onReset) {
         await onReset();
       } else {
-        await fetch('http://localhost:5000/winners/reset', { method: 'POST' });
+        await fetch('https://raffle-draw-dl86.onrender.com/winners/reset', { method: 'POST' });
       }
     } catch (err) {
       console.error('Reset failed', err);

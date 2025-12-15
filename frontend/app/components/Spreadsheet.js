@@ -41,7 +41,7 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
     const fetchParticipants = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch("http://localhost:5000/participants");
+        const res = await fetch("https://raffle-draw-dl86.onrender.com/participants");
         if (!res.ok) return;
         const data = await res.json();
         if (!Array.isArray(data) || data.length === 0) return;
