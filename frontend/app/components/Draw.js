@@ -41,7 +41,7 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
     const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
     
     // 3. Fake Search for 10 seconds
-    const duration = 10000; // 10 seconds
+    const duration = 15000; // 15 seconds
     const startTime = Date.now();
     const tickSpeed = 80; // Fast ticking
 
