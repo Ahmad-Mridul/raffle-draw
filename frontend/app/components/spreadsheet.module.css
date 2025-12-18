@@ -106,6 +106,10 @@
   /* Allow to stretch */
 }
 
+.sheetTable td:nth-child(4) .cellInput {
+  text-transform: uppercase;
+}
+
 /* highlight animation for a chosen winner row */
 .highlightRow {
   animation: highlightFlash 1400ms ease forwards;

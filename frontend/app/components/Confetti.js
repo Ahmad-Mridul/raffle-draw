@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 // Lightweight canvas confetti implementation
-export default function Confetti({ active = false, duration = 1800 }) {
+export default function Confetti({ active = false, duration = 1800, mode = 'standard' }) {
   const canvasRef = useRef(null);
   const rafRef = useRef(null);
 
@@ -22,7 +22,8 @@ export default function Confetti({ active = false, duration = 1800 }) {
     }
 
     // create particles
-    const particles = Array.from({ length: 80 }).map(() => ({
+    // Standard rain from top
+    let particles = Array.from({ length: 80 }).map(() => ({
       x: rand(0, w),
       y: rand(-h, 0),
       vx: rand(-2, 2),
@@ -30,7 +31,44 @@ export default function Confetti({ active = false, duration = 1800 }) {
       size: rand(6, 12),
       color: colors[Math.floor(rand(0, colors.length))],
       rot: rand(0, 360),
+      gravity: 0.06,
     }));
+
+    // Add corner blast particles if requested
+    if (mode === 'corner-blast') {
+      const cornerParticles = [];
+      const blastCount = 60;
+
+      // Bottom Left
+      for (let i = 0; i < blastCount; i++) {
+        cornerParticles.push({
+          x: 0,
+          y: h,
+          vx: rand(5, 15), // Shoot right
+          vy: rand(-15, -25), // Shoot up strongly
+          size: rand(8, 14),
+          color: colors[Math.floor(rand(0, colors.length))],
+          rot: rand(0, 360),
+          gravity: 0.25, // Heavier gravity for "fountain" arc
+        });
+      }
+
+      // Bottom Right
+      for (let i = 0; i < blastCount; i++) {
+        cornerParticles.push({
+          x: w,
+          y: h,
+          vx: rand(-5, -15), // Shoot left
+          vy: rand(-15, -25), // Shoot up strongly
+          size: rand(8, 14),
+          color: colors[Math.floor(rand(0, colors.length))],
+          rot: rand(0, 360),
+          gravity: 0.25,
+        });
+      }
+
+      particles = [...particles, ...cornerParticles];
+    }
 
     let start = performance.now();
 
@@ -43,11 +81,16 @@ export default function Confetti({ active = false, duration = 1800 }) {
     function draw(t) {
       const dt = t - start;
       ctx.clearRect(0, 0, w, h);
+
       particles.forEach((p) => {
         p.x += p.vx;
         p.y += p.vy;
-        p.vy += 0.06; // gravity
+        p.vy += p.gravity; // Use per-particle gravity
         p.rot += 6;
+
+        // Simple bounds check to stop computing off-screen particles purely for efficiency?
+        // For now just let them fall.
+
         ctx.save();
         ctx.translate(p.x, p.y);
         ctx.rotate((p.rot * Math.PI) / 180);
@@ -70,7 +113,7 @@ export default function Confetti({ active = false, duration = 1800 }) {
       cancelAnimationFrame(rafRef.current);
       window.removeEventListener("resize", onResize);
     };
-  }, [active, duration]);
+  }, [active, duration, mode]);
 
   // overlay canvas
   return (
@@ -80,7 +123,7 @@ export default function Confetti({ active = false, duration = 1800 }) {
         position: "fixed",
         inset: 0,
         pointerEvents: "none",
-        zIndex: 9999,
+        zIndex: 10005,
       }}
     />
   );

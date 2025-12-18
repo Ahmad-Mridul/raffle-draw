@@ -54,7 +54,7 @@ export default function WinnersList({ winners = [], onReset }) {
                 <li key={idx} className={`${styles.item} ${rankClass}`}>
                   <span className={styles.rank}>#{rank}</span>
                   <span className={styles.id}>{winner[0]}</span>
-                  <span className={styles.name}>{winner[2]}</span>
+                  <span className={styles.name}>{winner[2].toUpperCase()}</span>
                 </li>
               );
             })}

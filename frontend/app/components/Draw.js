@@ -11,6 +11,8 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
   const [buttonActive, setButtonActive] = useState(false);
   const [animating, setAnimating] = useState(false);
 
+  const [showModal, setShowModal] = useState(false);
+
   const isRowEmpty = (row) => {
     return row.every((cell) => (cell ?? "").toString().trim() === "");
   };
@@ -32,6 +34,7 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
     setAnimating(true);
     setButtonActive(true);
     setIsRolling(true);
+    setShowModal(false);
 
     // 2. Pre-select winner
     const winnerIndexInValid = Math.floor(Math.random() * validIndices.length);
@@ -42,7 +45,7 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
 
     // 3. Fake Search
     const isFirstRankWinner = winnersCount === 19;
-    const duration = isFirstRankWinner ? 60000 : 30000;
+    const duration = isFirstRankWinner ? 15000 : 1000;
     const startTime = Date.now();
     const tickSpeed = 80; // Fast ticking
 
@@ -65,9 +68,15 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
     });
     if (onWinner) onWinner(winnerRowIndex);
     setConfettiActive(true);
+    setShowModal(true);
     setAnimating(false);
     setButtonActive(false);
     setIsRolling(false);
+  };
+
+  const closeWinnerModal = () => {
+    setShowModal(false);
+    // Optionally clear winner or keep it? Kept it for history.
   };
 
   return (
@@ -80,7 +89,7 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
         className={styles.logo}
       />
 
-      {winner && winner.row ? <div className={styles.winnerLabel}>Winner</div> : null}
+      {winner && winner.row ? <div className={styles.winnerLabel}>Last Winner</div> : null}
 
       <div className={`${styles.displayField} ${winner && winner.row ? styles.displayFieldWinner : ''}`} role="status" aria-live="polite">
         {winner && winner.message ? (
@@ -110,11 +119,22 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
         <div style={{ marginTop: 8, color: '#b00', fontSize: 13 }} aria-live="polite">Maximum 20 winners reached</div>
       ) : null}
 
-      {confettiActive && <Confetti active={confettiActive} duration={1800} />}
+      {confettiActive && <Confetti active={confettiActive} duration={5000} mode={winnersCount === 20 ? 'corner-blast' : 'standard'} />}
 
-      {/* <div className={styles.hint}>
-        Tip: replace the participants array in <code>Draw.jsx</code> with real names.
-      </div> */}
+      {/* WINNER POPUP MODAL */}
+      {showModal && winner && winner.row && (
+        <div className={styles.modalOverlay} onClick={closeWinnerModal}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+            <button className={styles.closeButton} onClick={closeWinnerModal}>
+              &times;
+            </button>
+            <div className={styles.winnerTitle}>🎉 Congratulation! 🎉</div>
+            <div className={styles.winnerName}>{winner.row[2] ?? ""}</div>
+            <div className={styles.winnerDetail}>ID: {winner.row[0] ?? ""}</div>
+            <div className={styles.winnerDetail}>Batch: {winner.row[1] ?? ""}</div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
