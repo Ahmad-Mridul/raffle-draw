@@ -1,0 +1,157 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    /* Darker overlay for better contrast */
+    backdrop-filter: blur(12px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    /* subtle glow behind the content */
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    animation: scaleUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    max-width: 90%;
+}
+
+.rankBadge {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fbbf24;
+    /* Amber-400 */
+    background: rgba(251, 191, 36, 0.1);
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    margin-bottom: 24px;
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+    animation: shine 2s infinite linear;
+}
+
+.congratsTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    background: linear-gradient(to right, #fef3c7, #fde68a, #fef3c7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.winnerName {
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 20px 0;
+    line-height: 1.1;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.6), 0 4px 10px rgba(0, 0, 0, 0.8);
+    /* slight floating animation */
+    animation: float 3s ease-in-out infinite;
+}
+
+.details {
+    font-size: 1.5rem;
+    color: #e5e7eb;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.detailItem {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.closeButton {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.closeButton:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(251, 191, 36, 0.6);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+    }
+}
