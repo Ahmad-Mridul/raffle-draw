@@ -39,24 +39,25 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
 
     // Helper to wait
     const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-    
-    // 3. Fake Search for 10 seconds
-    const duration = 15000; // 15 seconds
+
+    // 3. Fake Search
+    const isFirstRankWinner = winnersCount === 19;
+    const duration = isFirstRankWinner ? 60000 : 30000;
     const startTime = Date.now();
     const tickSpeed = 80; // Fast ticking
 
     while (Date.now() - startTime < duration) {
-       // Pick a random row from valid ones to highlight (fake searching)
-       // We ensure we don't pick the same one twice in a row for better visual flickering
-       let randIndex = Math.floor(Math.random() * validIndices.length);
-       setSelectedRowIndex(validIndices[randIndex]);
-       
-       await wait(tickSpeed);
+      // Pick a random row from valid ones to highlight (fake searching)
+      // We ensure we don't pick the same one twice in a row for better visual flickering
+      let randIndex = Math.floor(Math.random() * validIndices.length);
+      setSelectedRowIndex(validIndices[randIndex]);
+
+      await wait(tickSpeed);
     }
 
     // 4. Reveal Winner
     setSelectedRowIndex(winnerRowIndex);
-    
+
     // 6. Announce Winner
     setWinner({
       row: rows[winnerRowIndex],
@@ -85,7 +86,7 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
         {winner && winner.message ? (
           winner.message
         ) : winner && winner.row ? (
-          <div style={{display: 'flex', flexDirection: 'column', gap: 6}}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
             <div>Registration: {winner.row[0] ?? ""}</div>
             <div>Batch: {winner.row[1] ?? ""}</div>
             <div>Name: {winner.row[2] ?? ""}</div>
@@ -99,7 +100,7 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
         className={`${styles.button} ${buttonActive ? styles.buttonActive : ""} ${winnersCount >= 20 ? "hidden" : ""}`}
         onClick={draw}
         aria-label="Draw"
-        disabled={animating }
+        disabled={animating}
         title={winnersCount >= 20 ? 'Maximum 20 winners reached' : undefined}
       >
         Draw
