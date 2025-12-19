@@ -41,18 +41,8 @@ export default function WinnersList({ winners = [], onReset }) {
         ) : (
           <ul className={styles.list}>
             {winners.slice().reverse().map((winner, idx) => {
-              // Calculate ranking where 1st winner -> #20, 2nd -> #19, ...
-              const originalIndex = winners.length - 1 - idx;
-              const rank = 20 - originalIndex;
-
-              let rankClass = '';
-              if (rank === 1) rankClass = styles.rank1;
-              else if (rank === 2) rankClass = styles.rank2;
-              else if (rank === 3) rankClass = styles.rank3;
-
               return (
-                <li key={idx} className={`${styles.item} ${rankClass}`}>
-                  <span className={styles.rank}>#{rank}</span>
+                <li key={idx} className={styles.item}>
                   <span className={styles.id}>{winner[0]}</span>
                   <span className={styles.name}>{winner[2].toUpperCase()}</span>
                 </li>
