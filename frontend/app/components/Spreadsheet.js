@@ -32,51 +32,14 @@ export default function Spreadsheet({ cols: propsCols, setCols: propsSetCols, ro
       const wrapRect = wrapper.getBoundingClientRect();
       const offset = rect.top - wrapRect.top + wrapper.scrollTop - wrapper.clientHeight / 2 + rect.height / 2;
       wrapper.scrollTo({ top: offset, behavior: "smooth" });
-      setTimeout(() => {}, 1500);
+      setTimeout(() => { }, 1500);
     }
   }, [selectedRowIndex]);
 
-  // Fetch participants from API on mount and populate sheet
+  // Fetch participants removed. Data is now passed strictly via props from parent.
+  // This prevents race conditions and ensures column order is controlled by page.js.
   useEffect(() => {
-    const fetchParticipants = async () => {
-      setIsLoading(true);
-      try {
-        const res = await fetch("https://raffle-draw-dl86.onrender.com/participants");
-        if (!res.ok) return;
-        const data = await res.json();
-        if (!Array.isArray(data) || data.length === 0) return;
-
-        // Build a union of keys across all objects to ensure consistent columns
-        const keySet = data.reduce((s, item) => {
-          Object.keys(item).forEach((k) => s.add(k));
-          return s;
-        }, new Set());
-        const keys = Array.from(keySet).filter((k) => !["_id", "movedAt", "restoredAt"].includes(k));
-
-        const apiCols = keys.map((k, i) => ({ id: i + 1, name: k }));
-        setCols(apiCols);
-
-        const apiRows = data.map((item) =>
-          keys.map((k) => {
-            const v = item[k];
-            if (v == null) return "";
-            if (typeof v === "object") {
-              if (v.hasOwnProperty("$oid")) return v.$oid;
-              return v.toString();
-            }
-            return v;
-          })
-        );
-        setRows(apiRows);
-      } catch (err) {
-        // eslint-disable-next-line no-console
-        console.error("Failed to fetch participants", err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchParticipants();
+    // optional: any other prop-syncing logic if needed
   }, [setCols, setRows]);
 
   const updateColName = (colIdx, newName) => {

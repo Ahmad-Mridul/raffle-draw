@@ -46,7 +46,12 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
 
     // 3. Fake Search
     const isFirstRankWinner = winnersCount === 19;
-    const duration = isFirstRankWinner ? 1000 : 500;
+    let duration = 30000;
+    if (isFirstRankWinner) {
+      duration = 60000;
+    } else if (winnersCount === 18 || winnersCount === 17) {
+      duration = 45000;
+    }
     const startTime = Date.now();
     const tickSpeed = 80; // Fast ticking
 

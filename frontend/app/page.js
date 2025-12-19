@@ -46,15 +46,14 @@ const page = () => {
       const json = await res.json();
 
       if (Array.isArray(json) && json.length > 0) {
-        // Build column keys (exclude _id)
-        const keySet = json.reduce((s, it) => {
-          Object.keys(it).forEach((k) => s.add(k));
-          return s;
-        }, new Set());
-        const keys = Array.from(keySet).filter((k) => !['_id', 'movedAt', 'restoredAt'].includes(k));
-        setCols(keys.map((k, i) => ({ id: i + 1, name: k })));
+        // Force specific column order: ID, BATCH, FULL NAME
+        const orderedKeys = ['ID', 'BATCH', 'FULL NAME'];
 
-        const newRows = json.map((item) => keys.map((k) => item[k] ?? ""));
+        // Ensure these columns exist in our state
+        setCols(orderedKeys.map((k, i) => ({ id: i + 1, name: k })));
+
+        // strict mapping based on orderedKeys, no sorting
+        const newRows = json.map((item) => orderedKeys.map((k) => item[k] ?? ""));
         setRows(newRows);
         return;
       }
@@ -145,61 +144,61 @@ const page = () => {
           setSelectedRowIndex={setSelectedRowIndex}
           setIsRolling={setIsRolling}
           winnersCount={winners.length}
-            onWinner={async (rowIndex) => {
-               setSelectedRowIndex(rowIndex);
-               const winner = rows[rowIndex];
+          onWinner={async (rowIndex) => {
+            setSelectedRowIndex(rowIndex);
+            const winner = rows[rowIndex];
 
-               // Build an object mapping column names -> values so backend can find the participant
-               const payload = {};
-               cols.forEach((c, idx) => {
-                 payload[c.name] = winner[idx];
-               });
+            // Build an object mapping column names -> values so backend can find the participant
+            const payload = {};
+            cols.forEach((c, idx) => {
+              payload[c.name] = winner[idx];
+            });
 
-               // Map payload into the local display format [ID, Batch, Name]
-               const localMapped = [
-                 payload['ID'] || payload['Id'] || payload['id'] || '',
-                 payload['BATCH'] || payload['Batch'] || payload['batch'] || '',
-                 payload['FULL NAME'] || payload['Full Name'] || payload['Full name'] || payload['name'] || payload['NAME'] || '',
-               ];
+            // Map payload into the local display format [ID, Batch, Name]
+            const localMapped = [
+              payload['ID'] || payload['Id'] || payload['id'] || '',
+              payload['BATCH'] || payload['Batch'] || payload['batch'] || '',
+              payload['FULL NAME'] || payload['Full Name'] || payload['Full name'] || payload['name'] || payload['NAME'] || '',
+            ];
 
-               // Optimistically show the winner immediately
-               setWinners((prev) => [...prev, localMapped]);
+            // Optimistically show the winner immediately
+            setWinners((prev) => [...prev, localMapped]);
 
-               try {
-                 const res = await fetch('https://raffle-draw-dl86.onrender.com/winners', {
-                   method: 'POST',
-                   headers: { 'Content-Type': 'application/json' },
-                   body: JSON.stringify(payload),
-                 });
-                 if (!res.ok) {
-                   throw new Error('Failed to persist winner to backend');
-                 }
+            try {
+              const res = await fetch('https://raffle-draw-dl86.onrender.com/winners', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+              });
+              if (!res.ok) {
+                throw new Error('Failed to persist winner to backend');
+              }
 
-                 const json = await res.json();
+              const json = await res.json();
 
-                 // Replace the optimistic entry with the authoritative server copy (if provided)
-                 if (json && json.winner) {
-                   const idFromServer = json.winner.ID || json.winner.Id || json.winner.id || (json.winner._id ? String(json.winner._id) : '');
-                   const serverMapped = [
-                     idFromServer,
-                     json.winner.BATCH || json.winner.Batch || json.winner.batch || '',
-                     json.winner['FULL NAME'] || json.winner['Full Name'] || json.winner.name || json.winner.NAME || '',
-                   ];
+              // Replace the optimistic entry with the authoritative server copy (if provided)
+              if (json && json.winner) {
+                const idFromServer = json.winner.ID || json.winner.Id || json.winner.id || (json.winner._id ? String(json.winner._id) : '');
+                const serverMapped = [
+                  idFromServer,
+                  json.winner.BATCH || json.winner.Batch || json.winner.batch || '',
+                  json.winner['FULL NAME'] || json.winner['Full Name'] || json.winner.name || json.winner.NAME || '',
+                ];
 
-                   setWinners((prev) => prev.map((w) => (w[0] === localMapped[0] ? serverMapped : w)));
-                 }
+                setWinners((prev) => prev.map((w) => (w[0] === localMapped[0] ? serverMapped : w)));
+              }
 
-                 // Refresh participants to remove the winner from the sheet
-                 await fetchParticipants();
-                 // Also refresh winners from backend to reconcile any differences
-                 await fetchWinners();
-                 setSelectedRowIndex(null);
-               } catch (err) {
-                 console.error('Error calling winners API', err);
-                 // Roll back optimistic update on failure
-                 setWinners((prev) => prev.filter((w) => w[0] !== localMapped[0]));
-               }
-            }}
+              // Refresh participants to remove the winner from the sheet
+              await fetchParticipants();
+              // Also refresh winners from backend to reconcile any differences
+              await fetchWinners();
+              setSelectedRowIndex(null);
+            } catch (err) {
+              console.error('Error calling winners API', err);
+              // Roll back optimistic update on failure
+              setWinners((prev) => prev.filter((w) => w[0] !== localMapped[0]));
+            }
+          }}
         />
       </section>
     </main>
