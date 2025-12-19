@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Confetti from "./Confetti";
-import GrandWinnerModal from "./GrandWinnerModal";
 import Image from "next/image";
 import styles from "./draw.module.css";
 
@@ -45,13 +44,7 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
     const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
     // 3. Fake Search
-    const isFirstRankWinner = winnersCount === 19;
-    let duration = 30000;
-    if (isFirstRankWinner) {
-      duration = 60000;
-    } else if (winnersCount === 18 || winnersCount === 17) {
-      duration = 45000;
-    }
+    const duration = 30000;
     const startTime = Date.now();
     const tickSpeed = 80; // Fast ticking
 
@@ -112,38 +105,31 @@ export default function Draw({ rows = [], onWinner, setSelectedRowIndex, setIsRo
       </div>
 
       <button
-        className={`${styles.button} ${buttonActive ? styles.buttonActive : ""} ${winnersCount >= 20 ? "hidden" : ""}`}
+        className={`${styles.button} ${buttonActive ? styles.buttonActive : ""}`}
         onClick={draw}
         aria-label="Draw"
         disabled={animating}
-        title={winnersCount >= 20 ? 'Maximum 20 winners reached' : undefined}
       >
         Draw
       </button>
 
-      {winnersCount >= 20 ? (
-        <div style={{ marginTop: 8, color: '#b00', fontSize: 13 }} aria-live="polite">Maximum 20 winners reached</div>
-      ) : null}
+      {/* No limit message */}
 
-      {confettiActive && winnersCount < 20 && <Confetti active={confettiActive} duration={5000} mode="standard" />}
+      {confettiActive && <Confetti active={confettiActive} duration={5000} mode="standard" />}
 
       {/* WINNER POPUP MODAL */}
       {showModal && winner && winner.row && (
-        winnersCount === 20 ? (
-          <GrandWinnerModal winner={winner} onClose={closeWinnerModal} />
-        ) : (
-          <div className={styles.modalOverlay} onClick={closeWinnerModal}>
-            <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-              <button className={styles.closeButton} onClick={closeWinnerModal}>
-                &times;
-              </button>
-              <div className={styles.winnerTitle}>🎉 Congratulation! 🎉</div>
-              <div className={styles.winnerName}>{winner.row[2] ?? ""}</div>
-              <div className={styles.winnerDetail}>ID: {winner.row[0] ?? ""}</div>
-              <div className={styles.winnerDetail}>Batch: {winner.row[1] ?? ""}</div>
-            </div>
+        <div className={styles.modalOverlay} onClick={closeWinnerModal}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+            <button className={styles.closeButton} onClick={closeWinnerModal}>
+              &times;
+            </button>
+            <div className={styles.winnerTitle}>🎉 Congratulation! 🎉</div>
+            <div className={styles.winnerName}>{winner.row[2] ?? ""}</div>
+            <div className={styles.winnerDetail}>ID: {winner.row[0] ?? ""}</div>
+            <div className={styles.winnerDetail}>Batch: {winner.row[1] ?? ""}</div>
           </div>
-        )
+        </div>
       )}
     </div>
   );
